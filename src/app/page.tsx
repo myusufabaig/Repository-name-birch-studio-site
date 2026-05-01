@@ -241,26 +241,43 @@ export default function Home() {
             </p>
           </div>
 
-          <form className="space-y-4">
-            <input
-              className="w-full rounded-2xl bg-[#F7F4ED] text-[#1F241C] px-4 py-4 transition focus:outline-none focus:ring-4 focus:ring-white/20"
-              placeholder="Name"
-            />
-            <input
-              className="w-full rounded-2xl bg-[#F7F4ED] text-[#1F241C] px-4 py-4 transition focus:outline-none focus:ring-4 focus:ring-white/20"
-              placeholder="Email"
-            />
-            <input
-              className="w-full rounded-2xl bg-[#F7F4ED] text-[#1F241C] px-4 py-4 transition focus:outline-none focus:ring-4 focus:ring-white/20"
-              placeholder="Business name"
-            />
-            <textarea
-              className="w-full rounded-2xl bg-[#F7F4ED] text-[#1F241C] px-4 py-4 h-36 transition focus:outline-none focus:ring-4 focus:ring-white/20"
-              placeholder="What do you need built?"
-            />
-            <button className="bg-[#E2D2B8] text-[#2F3D2C] px-6 py-4 rounded-full w-full transition hover:scale-[1.02] hover:bg-[#F7F4ED]">
-              Submit Request
-            </button>
+          <form< 
+  action="https://formspree.io/f/xpqbwpbr"
+  method="POST"
+  className="space-y-4"
+>
+  <input
+    name="name"
+    className="w-full rounded-2xl bg-[#F7F4ED] text-[#1F241C] px-4 py-4 transition focus:outline-none focus:ring-4 focus:ring-white/20"
+    placeholder="Name"
+  />
+
+  <input
+    type="email"
+    name="email"
+    className="w-full rounded-2xl bg-[#F7F4ED] text-[#1F241C] px-4 py-4 transition focus:outline-none focus:ring-4 focus:ring-white/20"
+    placeholder="Email"
+  />
+
+  <input
+    name="business"
+    className="w-full rounded-2xl bg-[#F7F4ED] text-[#1F241C] px-4 py-4 transition focus:outline-none focus:ring-4 focus:ring-white/20"
+    placeholder="Business name"
+  />
+
+  <textarea
+    name="message"
+    className="w-full rounded-2xl bg-[#F7F4ED] text-[#1F241C] px-4 py-4 h-36 transition focus:outline-none focus:ring-4 focus:ring-white/20"
+    placeholder="What do you need built?"
+  />
+
+  <button
+    type="submit"
+    className="bg-[#E2D2B8] text-[#2F3D2C] px-6 py-4 rounded-full w-full transition hover:scale-[1.02] hover:bg-[#F7F4ED]"
+  >
+    Submit Request
+  </button>
+</form>
           </form>
         </div>
       </section>
