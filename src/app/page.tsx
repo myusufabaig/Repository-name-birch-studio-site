@@ -1,0 +1,269 @@
+export default function Home() {
+  return (
+    <main className="min-h-screen bg-[#F7F4ED] text-[#1F241C]">
+      {/* NAVBAR */}
+      <nav className="fixed top-0 left-0 right-0 z-50 border-b border-[#E2D2B8]/40 bg-[#F7F4ED]/85 backdrop-blur-md">
+        <div className="max-w-7xl mx-auto flex items-center justify-between px-8 py-5">
+          <div className="text-2xl md:text-3xl font-semibold tracking-tight">
+            Birch Studio
+          </div>
+
+          <div className="hidden md:flex gap-10 text-sm text-[#1F241C]/60">
+            <a href="#services" className="hover:text-[#2F3D2C] transition">Services</a>
+            <a href="#process" className="hover:text-[#2F3D2C] transition">Process</a>
+            <a href="#pricing" className="hover:text-[#2F3D2C] transition">Pricing</a>
+            <a href="#contact" className="hover:text-[#2F3D2C] transition">Contact</a>
+          </div>
+
+          <button className="bg-[#2F3D2C] text-white px-5 py-2 rounded-full text-sm transition hover:scale-105 hover:bg-[#1F241C]">
+            Get Quote
+          </button>
+        </div>
+      </nav>
+
+      {/* HERO */}
+      <section className="pt-40 pb-28 px-6">
+        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+          <div>
+            <div className="inline-block mb-6 px-4 py-2 rounded-full bg-[#E2D2B8]/35 text-xs tracking-[0.25em] text-[#7A5C3E]">
+              DESIGN-LED • BUILT FAST • MADE TO CONVERT
+            </div>
+
+            <h1 className="text-5xl md:text-7xl font-semibold leading-tight mb-8 tracking-tight">
+              Websites that look premium,
+              <br />
+              and convert like they should.
+            </h1>
+
+            <p className="text-lg text-[#1F241C]/65 mb-10 max-w-xl">
+              We design and build modern websites for real businesses—fast,
+              clean, and structured to turn visitors into customers.
+            </p>
+
+            <div className="flex gap-4">
+              <button className="bg-[#2F3D2C] text-white px-8 py-4 rounded-full text-sm transition hover:scale-105 hover:bg-[#1F241C]">
+                Start a Project
+              </button>
+
+              <button className="border border-[#7A5C3E]/40 text-[#7A5C3E] px-8 py-4 rounded-full text-sm transition hover:bg-[#E2D2B8]/30">
+                View Work
+              </button>
+            </div>
+          </div>
+
+          {/* MOCKUP */}
+          <div className="rounded-[2rem] bg-[#E2D2B8]/35 p-5 shadow-xl transition duration-500 hover:scale-[1.02]">
+            <div className="rounded-[1.5rem] bg-[#FFFDF8] p-6 min-h-[420px] border border-[#E2D2B8]/50">
+              <div className="flex justify-between items-center border-b border-[#E2D2B8]/40 pb-4 mb-8">
+                <div className="font-semibold text-[#2F3D2C]">Client Website</div>
+                <div className="text-xs text-[#7A5C3E]/70">LIVE PREVIEW</div>
+              </div>
+
+              <div className="h-40 rounded-2xl bg-[#6F7F63] mb-6"></div>
+
+              <div className="space-y-3 mb-8">
+                <div className="h-4 rounded-full bg-[#E2D2B8] w-3/4"></div>
+                <div className="h-4 rounded-full bg-[#E2D2B8]/60 w-full"></div>
+                <div className="h-4 rounded-full bg-[#E2D2B8]/60 w-5/6"></div>
+              </div>
+
+              <div className="grid grid-cols-3 gap-3">
+                <div className="h-24 rounded-2xl bg-[#F7F4ED] border border-[#E2D2B8]/50"></div>
+                <div className="h-24 rounded-2xl bg-[#F7F4ED] border border-[#E2D2B8]/50"></div>
+                <div className="h-24 rounded-2xl bg-[#F7F4ED] border border-[#E2D2B8]/50"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* SERVICES */}
+      <section id="services" className="py-28 px-6 bg-[#FFFDF8]">
+        <div className="max-w-7xl mx-auto mb-20">
+          <p className="text-sm tracking-[0.3em] text-[#7A5C3E]/60 mb-4 uppercase">
+            Services
+          </p>
+          <h2 className="text-4xl md:text-6xl font-semibold max-w-3xl leading-tight">
+            Built for businesses that want more than a basic website.
+          </h2>
+        </div>
+
+        <div className="grid md:grid-cols-3 gap-6 max-w-7xl mx-auto">
+          <div className="rounded-[2rem] bg-[#F7F4ED] border border-[#E2D2B8]/40 p-8 transition duration-300 hover:-translate-y-2 hover:shadow-xl">
+            <p className="text-sm text-[#7A5C3E]/60 mb-10">01</p>
+            <h3 className="text-2xl font-semibold mb-4">Creative Websites</h3>
+            <p className="text-[#1F241C]/60">
+              Designed around your business, your personality, and the customers
+              you want to attract.
+            </p>
+          </div>
+
+          <div className="rounded-[2rem] bg-[#2F3D2C] text-white p-8 transition duration-300 hover:-translate-y-2 hover:shadow-xl">
+            <p className="text-sm text-white/40 mb-10">02</p>
+            <h3 className="text-2xl font-semibold mb-4">AI Speed</h3>
+            <p className="text-white/65">
+              AI helps us move fast, while a structured workflow keeps the site
+              reliable and controlled.
+            </p>
+          </div>
+
+          <div className="rounded-[2rem] bg-[#F7F4ED] border border-[#E2D2B8]/40 p-8 transition duration-300 hover:-translate-y-2 hover:shadow-xl">
+            <p className="text-sm text-[#7A5C3E]/60 mb-10">03</p>
+            <h3 className="text-2xl font-semibold mb-4">Monthly Support</h3>
+            <p className="text-[#1F241C]/60">
+              Ongoing edits, fixes, monitoring, and improvements after launch.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* PROCESS */}
+      <section id="process" className="py-28 px-6">
+        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16">
+          <div>
+            <p className="text-sm tracking-[0.3em] text-[#7A5C3E]/60 mb-4 uppercase">
+              Process
+            </p>
+            <h2 className="text-4xl md:text-5xl font-semibold leading-tight">
+              A thoughtful workflow, not random AI code.
+            </h2>
+          </div>
+
+          <div className="space-y-8">
+            <div className="border-t border-[#E2D2B8]/60 pt-6 transition duration-300 hover:translate-x-2">
+              <p className="text-sm text-[#7A5C3E]/60 mb-2">01 / Strategy</p>
+              <h3 className="text-xl font-semibold mb-2">Clarify the offer</h3>
+              <p className="text-[#1F241C]/60">
+                We define the site structure, message, sections, and conversion path.
+              </p>
+            </div>
+
+            <div className="border-t border-[#E2D2B8]/60 pt-6 transition duration-300 hover:translate-x-2">
+              <p className="text-sm text-[#7A5C3E]/60 mb-2">02 / Build</p>
+              <h3 className="text-xl font-semibold mb-2">Develop with taste</h3>
+              <p className="text-[#1F241C]/60">
+                We use modern tools and AI-assisted development to build quickly
+                without losing design quality.
+              </p>
+            </div>
+
+            <div className="border-t border-[#E2D2B8]/60 pt-6 transition duration-300 hover:translate-x-2">
+              <p className="text-sm text-[#7A5C3E]/60 mb-2">03 / Launch</p>
+              <h3 className="text-xl font-semibold mb-2">Deploy and maintain</h3>
+              <p className="text-[#1F241C]/60">
+                We launch the site, monitor it, and handle future updates.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* PRICING */}
+      <section id="pricing" className="py-28 px-6 bg-[#FFFDF8]">
+        <div className="max-w-7xl mx-auto mb-20">
+          <p className="text-sm tracking-[0.3em] text-[#7A5C3E]/60 mb-4 uppercase">
+            Pricing
+          </p>
+          <h2 className="text-4xl md:text-5xl font-semibold">
+            Simple packages. Serious output.
+          </h2>
+        </div>
+
+        <div className="grid md:grid-cols-3 gap-6 max-w-7xl mx-auto">
+          <div className="rounded-[2rem] bg-[#F7F4ED] border border-[#E2D2B8]/40 p-8 transition duration-300 hover:-translate-y-2 hover:shadow-xl">
+            <h3 className="text-xl font-semibold mb-4">Starter</h3>
+            <p className="text-4xl font-semibold mb-4">$500</p>
+            <p className="text-[#1F241C]/60 mb-6">
+              Single-page site for quick launches.
+            </p>
+            <ul className="space-y-2 text-sm text-[#1F241C]/60 mb-8">
+              <li>• One-page website</li>
+              <li>• Mobile responsive</li>
+              <li>• Basic contact section</li>
+            </ul>
+            <button className="border border-[#7A5C3E]/40 text-[#7A5C3E] px-6 py-3 rounded-full w-full transition hover:bg-[#E2D2B8]/30">
+              Start
+            </button>
+          </div>
+
+          <div className="rounded-[2rem] bg-[#2F3D2C] text-white p-8 transition duration-300 hover:-translate-y-2 hover:shadow-xl">
+            <p className="text-xs tracking-[0.3em] text-white/50 mb-4">
+              MOST POPULAR
+            </p>
+            <h3 className="text-xl font-semibold mb-4">Business</h3>
+            <p className="text-4xl font-semibold mb-4">$1,500</p>
+            <p className="text-white/65 mb-6">
+              Custom business website built to convert.
+            </p>
+            <ul className="space-y-2 text-sm text-white/70 mb-8">
+              <li>• Multi-section site</li>
+              <li>• Custom design direction</li>
+              <li>• SEO-ready structure</li>
+              <li>• Launch support</li>
+            </ul>
+            <button className="bg-[#F7F4ED] text-[#2F3D2C] px-6 py-3 rounded-full w-full transition hover:bg-white">
+              Start
+            </button>
+          </div>
+
+          <div className="rounded-[2rem] bg-[#F7F4ED] border border-[#E2D2B8]/40 p-8 transition duration-300 hover:-translate-y-2 hover:shadow-xl">
+            <h3 className="text-xl font-semibold mb-4">Premium</h3>
+            <p className="text-4xl font-semibold mb-4">$3,000+</p>
+            <p className="text-[#1F241C]/60 mb-6">
+              Advanced build for brands that need more.
+            </p>
+            <ul className="space-y-2 text-sm text-[#1F241C]/60 mb-8">
+              <li>• Custom features</li>
+              <li>• Branding refinement</li>
+              <li>• Priority delivery</li>
+              <li>• Ongoing support</li>
+            </ul>
+            <button className="border border-[#7A5C3E]/40 text-[#7A5C3E] px-6 py-3 rounded-full w-full transition hover:bg-[#E2D2B8]/30">
+              Start
+            </button>
+          </div>
+        </div>
+      </section>
+
+      {/* CONTACT */}
+      <section id="contact" className="py-28 px-6 bg-[#2F3D2C] text-white">
+        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16">
+          <div>
+            <p className="text-sm tracking-[0.3em] text-white/40 mb-4 uppercase">
+              Contact
+            </p>
+            <h2 className="text-4xl md:text-6xl font-semibold leading-tight mb-6">
+              Ready to build something warmer, sharper, and better?
+            </h2>
+            <p className="text-white/65 max-w-lg">
+              Tell us what you need. We’ll help turn it into a fast, clean, and
+              reliable website.
+            </p>
+          </div>
+
+          <form className="space-y-4">
+            <input
+              className="w-full rounded-2xl bg-[#F7F4ED] text-[#1F241C] px-4 py-4 transition focus:outline-none focus:ring-4 focus:ring-white/20"
+              placeholder="Name"
+            />
+            <input
+              className="w-full rounded-2xl bg-[#F7F4ED] text-[#1F241C] px-4 py-4 transition focus:outline-none focus:ring-4 focus:ring-white/20"
+              placeholder="Email"
+            />
+            <input
+              className="w-full rounded-2xl bg-[#F7F4ED] text-[#1F241C] px-4 py-4 transition focus:outline-none focus:ring-4 focus:ring-white/20"
+              placeholder="Business name"
+            />
+            <textarea
+              className="w-full rounded-2xl bg-[#F7F4ED] text-[#1F241C] px-4 py-4 h-36 transition focus:outline-none focus:ring-4 focus:ring-white/20"
+              placeholder="What do you need built?"
+            />
+            <button className="bg-[#E2D2B8] text-[#2F3D2C] px-6 py-4 rounded-full w-full transition hover:scale-[1.02] hover:bg-[#F7F4ED]">
+              Submit Request
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+  );
+}
