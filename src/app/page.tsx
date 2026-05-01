@@ -15,9 +15,9 @@ export default function Home() {
             <a href="#contact" className="hover:text-[#2F3D2C] transition">Contact</a>
           </div>
 
-          <button className="bg-[#2F3D2C] text-white px-5 py-2 rounded-full text-sm transition hover:scale-105 hover:bg-[#1F241C]">
+          <a href="#contact" className="bg-[#2F3D2C] text-white px-5 py-2 rounded-full text-sm transition hover:scale-105 hover:bg-[#1F241C]">
             Get Quote
-          </button>
+          </a>
         </div>
       </nav>
 
@@ -41,13 +41,13 @@ export default function Home() {
             </p>
 
             <div className="flex gap-4">
-              <button className="bg-[#2F3D2C] text-white px-8 py-4 rounded-full text-sm transition hover:scale-105 hover:bg-[#1F241C]">
+              <a href="#contact" className="bg-[#2F3D2C] text-white px-8 py-4 rounded-full text-sm transition hover:scale-105 hover:bg-[#1F241C]">
                 Start a Project
-              </button>
+              </a>
 
-              <button className="border border-[#7A5C3E]/40 text-[#7A5C3E] px-8 py-4 rounded-full text-sm transition hover:bg-[#E2D2B8]/30">
+              <a href="#services" className="border border-[#7A5C3E]/40 text-[#7A5C3E] px-8 py-4 rounded-full text-sm transition hover:bg-[#E2D2B8]/30">
                 View Work
-              </button>
+              </a>
             </div>
           </div>
 
@@ -181,9 +181,9 @@ export default function Home() {
               <li>• Mobile responsive</li>
               <li>• Basic contact section</li>
             </ul>
-            <button className="border border-[#7A5C3E]/40 text-[#7A5C3E] px-6 py-3 rounded-full w-full transition hover:bg-[#E2D2B8]/30">
+            <a href="#contact" className="border border-[#7A5C3E]/40 text-[#7A5C3E] px-6 py-3 rounded-full w-full block text-center transition hover:bg-[#E2D2B8]/30">
               Start
-            </button>
+            </a>
           </div>
 
           <div className="rounded-[2rem] bg-[#2F3D2C] text-white p-8 transition duration-300 hover:-translate-y-2 hover:shadow-xl">
@@ -201,9 +201,9 @@ export default function Home() {
               <li>• SEO-ready structure</li>
               <li>• Launch support</li>
             </ul>
-            <button className="bg-[#F7F4ED] text-[#2F3D2C] px-6 py-3 rounded-full w-full transition hover:bg-white">
+            <a href="#contact" className="bg-[#F7F4ED] text-[#2F3D2C] px-6 py-3 rounded-full w-full block text-center transition hover:bg-white">
               Start
-            </button>
+            </a>
           </div>
 
           <div className="rounded-[2rem] bg-[#F7F4ED] border border-[#E2D2B8]/40 p-8 transition duration-300 hover:-translate-y-2 hover:shadow-xl">
@@ -218,9 +218,9 @@ export default function Home() {
               <li>• Priority delivery</li>
               <li>• Ongoing support</li>
             </ul>
-            <button className="border border-[#7A5C3E]/40 text-[#7A5C3E] px-6 py-3 rounded-full w-full transition hover:bg-[#E2D2B8]/30">
+            <a href="#contact" className="border border-[#7A5C3E]/40 text-[#7A5C3E] px-6 py-3 rounded-full w-full block text-center transition hover:bg-[#E2D2B8]/30">
               Start
-            </button>
+            </a>
           </div>
         </div>
       </section>
