@@ -10,6 +10,7 @@ export default function Home() {
 
           <div className="hidden md:flex gap-10 text-sm text-[#1F241C]/60">
             <a href="#services" className="hover:text-[#2F3D2C] transition">Services</a>
+            <a href="#work" className="hover:text-[#2F3D2C] transition">Work</a>
             <a href="#process" className="hover:text-[#2F3D2C] transition">Process</a>
             <a href="#pricing" className="hover:text-[#2F3D2C] transition">Pricing</a>
             <a href="#contact" className="hover:text-[#2F3D2C] transition">Contact</a>
@@ -129,8 +130,48 @@ export default function Home() {
         </div>
       </section>
 
+      {/* SELECTED WORK */}
+      <section id="work" className="py-28 px-6">
+        <div className="max-w-7xl mx-auto mb-20">
+          <p className="text-sm tracking-[0.3em] text-[#7A5C3E]/60 mb-4 uppercase">
+            Selected Work
+          </p>
+          <h2 className="text-4xl md:text-6xl font-semibold max-w-3xl leading-tight">
+            Designed with intention. Built to perform.
+          </h2>
+        </div>
+
+        <div className="grid md:grid-cols-2 gap-10 max-w-7xl mx-auto">
+          <div className="rounded-[2rem] bg-[#FFFDF8] border border-[#E2D2B8]/50 p-6 transition hover:shadow-xl hover:-translate-y-1">
+            <div className="h-56 rounded-2xl bg-[#6F7F63] mb-6"></div>
+            <h3 className="text-2xl font-semibold mb-2">
+              Modern Service Business Site
+            </h3>
+            <p className="text-[#1F241C]/60 mb-4">
+              Clean layout designed to guide visitors toward a single action—getting in touch.
+            </p>
+            <p className="text-sm text-[#7A5C3E]/70">
+              Built for clarity, speed, and conversion.
+            </p>
+          </div>
+
+          <div className="rounded-[2rem] bg-[#FFFDF8] border border-[#E2D2B8]/50 p-6 transition hover:shadow-xl hover:-translate-y-1">
+            <div className="h-56 rounded-2xl bg-[#E2D2B8] mb-6"></div>
+            <h3 className="text-2xl font-semibold mb-2">
+              Local Business Landing Page
+            </h3>
+            <p className="text-[#1F241C]/60 mb-4">
+              Structured to quickly communicate value and capture leads.
+            </p>
+            <p className="text-sm text-[#7A5C3E]/70">
+              Focused on fast load times and mobile usability.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* PROCESS */}
-      <section id="process" className="py-28 px-6">
+      <section id="process" className="py-28 px-6 bg-[#FFFDF8]">
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16">
           <div>
             <p className="text-sm tracking-[0.3em] text-[#7A5C3E]/60 mb-4 uppercase">
@@ -171,7 +212,7 @@ export default function Home() {
       </section>
 
       {/* PRICING */}
-      <section id="pricing" className="py-28 px-6 bg-[#FFFDF8]">
+      <section id="pricing" className="py-28 px-6">
         <div className="max-w-7xl mx-auto mb-20">
           <p className="text-sm tracking-[0.3em] text-[#7A5C3E]/60 mb-4 uppercase">
             Pricing
