@@ -164,7 +164,62 @@ export default function Home() {
 
         <div className="grid md:grid-cols-2 gap-10 max-w-7xl mx-auto">
           {/* CASE STUDY CARD */}
-          <div className="group rounded-[2.5rem] bg-[#FFFDF8] border border-[#E2D2B8]/50 p-6 transition duration-300 hover:-translate-y-2 hover:shadow-2xl">
+{/* SAMPLE BUILD (REAL FEEL) */}
+<div className="group rounded-[2.5rem] bg-[#FFFDF8] border border-[#E2D2B8]/50 p-6 transition duration-300 hover:-translate-y-2 hover:shadow-2xl">
+
+  <div className="rounded-[2rem] bg-[#F7F4ED] border border-[#E2D2B8]/50 p-5 mb-8">
+    <div className="flex items-center justify-between border-b border-[#E2D2B8]/50 pb-4 mb-6">
+      <div className="flex gap-2">
+        <span className="w-3 h-3 rounded-full bg-[#E2D2B8]"></span>
+        <span className="w-3 h-3 rounded-full bg-[#E2D2B8]/70"></span>
+        <span className="w-3 h-3 rounded-full bg-[#E2D2B8]/40"></span>
+      </div>
+      <p className="text-xs text-[#7A5C3E]/60">SAMPLE BUILD</p>
+    </div>
+
+    <div className="grid grid-cols-5 gap-4">
+      <div className="col-span-3 h-48 rounded-2xl bg-[#6F7F63] transition group-hover:bg-[#5F7254]"></div>
+
+      <div className="col-span-2 space-y-3">
+        <div className="h-4 rounded-full bg-[#E2D2B8] w-4/5"></div>
+        <div className="h-4 rounded-full bg-[#E2D2B8]/60"></div>
+        <div className="h-4 rounded-full bg-[#E2D2B8]/50 w-3/4"></div>
+        <div className="h-20 rounded-2xl bg-[#FFFDF8] border border-[#E2D2B8]/50 mt-6"></div>
+      </div>
+    </div>
+  </div>
+
+  <p className="text-sm tracking-[0.25em] text-[#7A5C3E]/60 uppercase mb-3">
+    Granite Supplier • Concept Build
+  </p>
+
+  <h3 className="text-2xl font-semibold mb-3">
+    A cleaner structure designed to drive more quote requests.
+  </h3>
+
+  <p className="text-[#1F241C]/60 mb-6">
+    This concept focuses on simplifying the offer, improving trust, and guiding
+    contractors toward a single action: requesting a quote.
+  </p>
+
+  <div className="grid grid-cols-3 gap-4 border-t border-[#E2D2B8]/50 pt-6">
+    <div>
+      <p className="text-sm font-semibold">Clear Offer</p>
+      <p className="text-xs text-[#1F241C]/50">Simplified messaging</p>
+    </div>
+
+    <div>
+      <p className="text-sm font-semibold">Quote Focused</p>
+      <p className="text-xs text-[#1F241C]/50">Single CTA path</p>
+    </div>
+
+    <div>
+      <p className="text-sm font-semibold">Mobile Ready</p>
+      <p className="text-xs text-[#1F241C]/50">Optimized layout</p>
+    </div>
+  </div>
+
+</div>
             <div className="rounded-[2rem] bg-[#F7F4ED] border border-[#E2D2B8]/50 p-5 mb-8">
               <div className="flex items-center justify-between border-b border-[#E2D2B8]/50 pb-4 mb-6">
                 <div className="flex gap-2">
