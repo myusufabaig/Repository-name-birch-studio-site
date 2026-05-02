@@ -131,44 +131,117 @@ export default function Home() {
       </section>
 
       {/* SELECTED WORK */}
-      <section id="work" className="py-28 px-6">
-        <div className="max-w-7xl mx-auto mb-20">
-          <p className="text-sm tracking-[0.3em] text-[#7A5C3E]/60 mb-4 uppercase">
-            Selected Work
-          </p>
-          <h2 className="text-4xl md:text-6xl font-semibold max-w-3xl leading-tight">
-            Designed with intention. Built to perform.
-          </h2>
+      {/* SELECTED WORK */}
+<{/* SELECTED WORK */}
+<section id="work" className="py-32 px-6">
+  <div className="max-w-7xl mx-auto mb-20">
+    <p className="text-sm tracking-[0.3em] text-[#7A5C3E]/60 mb-4 uppercase">
+      Selected Work
+    </p>
+    <h2 className="text-4xl md:text-6xl font-semibold max-w-3xl leading-tight">
+      Visual systems that make businesses feel more credible.
+    </h2>
+  </div>
+
+  <div className="grid md:grid-cols-2 gap-10 max-w-7xl mx-auto">
+
+    {/* 🔥 CASE STUDY CARD */}
+    <div className="group rounded-[2.5rem] bg-[#FFFDF8] border border-[#E2D2B8]/50 p-6 transition duration-300 hover:-translate-y-2 hover:shadow-2xl">
+      <div className="rounded-[2rem] bg-[#F7F4ED] border border-[#E2D2B8]/50 p-5 mb-8">
+        <div className="flex items-center justify-between border-b border-[#E2D2B8]/50 pb-4 mb-6">
+          <div className="flex gap-2">
+            <span className="w-3 h-3 rounded-full bg-[#E2D2B8]"></span>
+            <span className="w-3 h-3 rounded-full bg-[#E2D2B8]/70"></span>
+            <span className="w-3 h-3 rounded-full bg-[#E2D2B8]/40"></span>
+          </div>
+          <p className="text-xs text-[#7A5C3E]/60">CASE STUDY</p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-10 max-w-7xl mx-auto">
-          <div className="rounded-[2rem] bg-[#FFFDF8] border border-[#E2D2B8]/50 p-6 transition hover:shadow-xl hover:-translate-y-1">
-            <div className="h-56 rounded-2xl bg-[#6F7F63] mb-6"></div>
-            <h3 className="text-2xl font-semibold mb-2">
-              Modern Service Business Site
-            </h3>
-            <p className="text-[#1F241C]/60 mb-4">
-              Clean layout designed to guide visitors toward a single action—getting in touch.
-            </p>
-            <p className="text-sm text-[#7A5C3E]/70">
-              Built for clarity, speed, and conversion.
-            </p>
-          </div>
+        <div className="grid grid-cols-5 gap-4">
+          <div className="col-span-3 h-48 rounded-2xl bg-[#6F7F63] transition group-hover:bg-[#5F7254]"></div>
 
-          <div className="rounded-[2rem] bg-[#FFFDF8] border border-[#E2D2B8]/50 p-6 transition hover:shadow-xl hover:-translate-y-1">
-            <div className="h-56 rounded-2xl bg-[#E2D2B8] mb-6"></div>
-            <h3 className="text-2xl font-semibold mb-2">
-              Local Business Landing Page
-            </h3>
-            <p className="text-[#1F241C]/60 mb-4">
-              Structured to quickly communicate value and capture leads.
-            </p>
-            <p className="text-sm text-[#7A5C3E]/70">
-              Focused on fast load times and mobile usability.
-            </p>
+          <div className="col-span-2 space-y-3">
+            <div className="h-4 rounded-full bg-[#E2D2B8] w-4/5"></div>
+            <div className="h-4 rounded-full bg-[#E2D2B8]/60"></div>
+            <div className="h-4 rounded-full bg-[#E2D2B8]/50 w-3/4"></div>
+            <div className="h-20 rounded-2xl bg-[#FFFDF8] border border-[#E2D2B8]/50 mt-6"></div>
           </div>
         </div>
-      </section>
+      </div>
+
+      <p className="text-sm tracking-[0.25em] text-[#7A5C3E]/60 uppercase mb-3">
+        Service Business Rebuild
+      </p>
+
+      <h3 className="text-2xl font-semibold mb-3">
+        Turning a basic website into a clearer lead engine.
+      </h3>
+
+      <p className="text-[#1F241C]/60 mb-6">
+        We restructured the site around trust, clarity, and one clear conversion path:
+        getting qualified visitors to reach out.
+      </p>
+
+      <div className="grid grid-cols-3 gap-4 border-t border-[#E2D2B8]/50 pt-6">
+        <div>
+          <p className="text-2xl font-semibold">3x</p>
+          <p className="text-xs text-[#1F241C]/50">Clearer CTA path</p>
+        </div>
+
+        <div>
+          <p className="text-2xl font-semibold">48hr</p>
+          <p className="text-xs text-[#1F241C]/50">Build sprint</p>
+        </div>
+
+        <div>
+          <p className="text-2xl font-semibold">100%</p>
+          <p className="text-xs text-[#1F241C]/50">Mobile ready</p>
+        </div>
+      </div>
+    </div>
+
+    {/* SUPPORTING PROJECT */}
+    <div className="group rounded-[2.5rem] bg-[#FFFDF8] border border-[#E2D2B8]/50 p-6 transition duration-300 hover:-translate-y-2 hover:shadow-2xl">
+      <div className="rounded-[2rem] bg-[#F7F4ED] border border-[#E2D2B8]/50 p-5 mb-8">
+        <div className="flex items-center justify-between border-b border-[#E2D2B8]/50 pb-4 mb-6">
+          <div className="flex gap-2">
+            <span className="w-3 h-3 rounded-full bg-[#6F7F63]/60"></span>
+            <span className="w-3 h-3 rounded-full bg-[#E2D2B8]/70"></span>
+            <span className="w-3 h-3 rounded-full bg-[#7A5C3E]/30"></span>
+          </div>
+          <p className="text-xs text-[#7A5C3E]/60">LANDING PAGE</p>
+        </div>
+
+        <div className="h-28 rounded-2xl bg-[#E2D2B8] mb-4"></div>
+        <div className="grid grid-cols-3 gap-4">
+          <div className="h-28 rounded-2xl bg-[#FFFDF8] border border-[#E2D2B8]/50"></div>
+          <div className="h-28 rounded-2xl bg-[#6F7F63] transition group-hover:bg-[#5F7254]"></div>
+          <div className="h-28 rounded-2xl bg-[#FFFDF8] border border-[#E2D2B8]/50"></div>
+        </div>
+      </div>
+
+      <h3 className="text-2xl font-semibold mb-3">
+        Local Business Landing Page
+      </h3>
+
+      <p className="text-[#1F241C]/60 mb-5">
+        A warm, direct landing page structure designed to explain value quickly and capture leads.
+      </p>
+
+      <div className="flex flex-wrap gap-2">
+        <span className="px-3 py-1 rounded-full bg-[#E2D2B8]/35 text-xs text-[#7A5C3E]">Conversion</span>
+        <span className="px-3 py-1 rounded-full bg-[#E2D2B8]/35 text-xs text-[#7A5C3E]">Clean Layout</span>
+        <span className="px-3 py-1 rounded-full bg-[#E2D2B8]/35 text-xs text-[#7A5C3E]">Responsive</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+  
+
+
+   
 
       {/* PROCESS */}
       <section id="process" className="py-28 px-6 bg-[#FFFDF8]">
