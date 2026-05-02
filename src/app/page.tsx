@@ -3,10 +3,13 @@ export default function Home() {
     <main className="min-h-screen bg-[#F7F4ED] text-[#1F241C]">
       {/* NAVBAR */}
       <nav className="fixed top-0 left-0 right-0 z-50 border-b border-[#E2D2B8]/40 bg-[#F7F4ED]/85 backdrop-blur-md">
-        <div className="max-w-7xl mx-auto flex items-center justify-between px-8 py-5">
-          <div className="text-2xl md:text-3xl font-semibold tracking-tight">
+        <div className="max-w-7xl mx-auto flex items-center justify-between px-6 md:px-8 py-5">
+          <a
+            href="#top"
+            className="text-2xl md:text-3xl font-semibold tracking-tight"
+          >
             Birch Studio
-          </div>
+          </a>
 
           <div className="hidden md:flex gap-10 text-sm text-[#1F241C]/60">
             <a
@@ -55,7 +58,10 @@ export default function Home() {
       </nav>
 
       {/* HERO */}
-      <section className="pt-40 pb-28 px-6">
+      <section
+        id="top"
+        className="pt-40 pb-28 px-6"
+      >
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
           <div>
             <div className="inline-block mb-6 px-4 py-2 rounded-full bg-[#E2D2B8]/35 text-xs tracking-[0.25em] text-[#7A5C3E]">
@@ -68,29 +74,29 @@ export default function Home() {
               and turn visitors into customers.
             </h1>
 
-            <p className="text-lg text-[#1F241C]/65 mb-10 max-w-xl">
+            <p className="text-lg text-[#1F241C]/65 mb-10 max-w-xl leading-relaxed">
               We design and build modern websites for real businesses—fast,
               clean, and structured to turn visitors into customers.
             </p>
 
-            <div className="flex gap-4">
+            <div className="flex flex-col sm:flex-row gap-4">
               <a
                 href="#contact"
-                className="bg-[#2F3D2C] text-white px-8 py-4 rounded-full text-sm transition hover:scale-105 hover:bg-[#1F241C]"
+                className="bg-[#2F3D2C] text-white px-8 py-4 rounded-full text-sm text-center transition hover:scale-105 hover:bg-[#1F241C]"
               >
                 Start My Project
               </a>
 
               <a
                 href="#work"
-                className="border border-[#7A5C3E]/40 text-[#7A5C3E] px-8 py-4 rounded-full text-sm transition hover:bg-[#E2D2B8]/30"
+                className="border border-[#7A5C3E]/40 text-[#7A5C3E] px-8 py-4 rounded-full text-sm text-center transition hover:bg-[#E2D2B8]/30"
               >
                 View Work
               </a>
             </div>
           </div>
 
-          {/* MOCKUP */}
+          {/* HERO MOCKUP */}
           <div className="rounded-[2rem] bg-[#E2D2B8]/35 p-5 shadow-xl transition duration-500 hover:scale-[1.02]">
             <div className="rounded-[1.5rem] bg-[#FFFDF8] p-6 min-h-[420px] border border-[#E2D2B8]/50">
               <div className="flex justify-between items-center border-b border-[#E2D2B8]/40 pb-4 mb-8">
@@ -173,7 +179,7 @@ export default function Home() {
               Creative Websites
             </h3>
 
-            <p className="text-[#1F241C]/60">
+            <p className="text-[#1F241C]/60 leading-relaxed">
               Designed around your business, your personality, and the customers
               you want to attract.
             </p>
@@ -188,7 +194,7 @@ export default function Home() {
               AI Speed
             </h3>
 
-            <p className="text-white/65">
+            <p className="text-white/65 leading-relaxed">
               AI helps us move fast, while a structured workflow keeps the site
               reliable and controlled.
             </p>
@@ -203,7 +209,7 @@ export default function Home() {
               Monthly Support
             </h3>
 
-            <p className="text-[#1F241C]/60">
+            <p className="text-[#1F241C]/60 leading-relaxed">
               Ongoing edits, fixes, monitoring, and improvements after launch.
             </p>
           </div>
@@ -266,7 +272,7 @@ export default function Home() {
               A cleaner structure designed to drive more quote requests.
             </h3>
 
-            <p className="text-[#1F241C]/60 mb-6">
+            <p className="text-[#1F241C]/60 mb-6 leading-relaxed">
               This concept focuses on simplifying the offer, improving trust,
               and guiding contractors toward a single action: requesting a quote.
             </p>
@@ -340,7 +346,7 @@ export default function Home() {
               A direct landing page designed to capture local leads.
             </h3>
 
-            <p className="text-[#1F241C]/60 mb-5">
+            <p className="text-[#1F241C]/60 mb-5 leading-relaxed">
               A warm, direct landing page structure designed to explain value
               quickly and capture quote requests.
             </p>
@@ -362,10 +368,60 @@ export default function Home() {
         </div>
       </section>
 
+      {/* PROOF */}
+      <section className="py-24 px-6 bg-[#FFFDF8]">
+        <div className="max-w-7xl mx-auto grid md:grid-cols-3 gap-6">
+          <div className="rounded-[2rem] border border-[#E2D2B8]/50 bg-[#F7F4ED] p-8">
+            <p className="text-sm tracking-[0.25em] text-[#7A5C3E]/60 uppercase mb-5">
+              Focus
+            </p>
+
+            <h3 className="text-2xl font-semibold mb-4">
+              Built around one clear action.
+            </h3>
+
+            <p className="text-[#1F241C]/60 leading-relaxed">
+              Every page is structured around the next step you want a visitor
+              to take.
+            </p>
+          </div>
+
+          <div className="rounded-[2rem] border border-[#E2D2B8]/50 bg-[#F7F4ED] p-8">
+            <p className="text-sm tracking-[0.25em] text-[#7A5C3E]/60 uppercase mb-5">
+              Speed
+            </p>
+
+            <h3 className="text-2xl font-semibold mb-4">
+              Fast enough to launch.
+            </h3>
+
+            <p className="text-[#1F241C]/60 leading-relaxed">
+              We use AI-assisted development to move quickly without turning
+              the work into messy, random code.
+            </p>
+          </div>
+
+          <div className="rounded-[2rem] border border-[#E2D2B8]/50 bg-[#F7F4ED] p-8">
+            <p className="text-sm tracking-[0.25em] text-[#7A5C3E]/60 uppercase mb-5">
+              Support
+            </p>
+
+            <h3 className="text-2xl font-semibold mb-4">
+              Ready after launch.
+            </h3>
+
+            <p className="text-[#1F241C]/60 leading-relaxed">
+              A website should keep improving. We can help with edits, updates,
+              and refinements after it goes live.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* PROCESS */}
       <section
         id="process"
-        className="py-28 px-6 bg-[#FFFDF8]"
+        className="py-28 px-6"
       >
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16">
           <div>
@@ -388,9 +444,9 @@ export default function Home() {
                 Clarify the offer
               </h3>
 
-              <p className="text-[#1F241C]/60">
+              <p className="text-[#1F241C]/60 leading-relaxed">
                 We define the site structure, message, sections, and conversion
-                path.
+                path before the build starts.
               </p>
             </div>
 
@@ -403,7 +459,7 @@ export default function Home() {
                 Develop with taste
               </h3>
 
-              <p className="text-[#1F241C]/60">
+              <p className="text-[#1F241C]/60 leading-relaxed">
                 We use modern tools and AI-assisted development to build quickly
                 without losing design quality.
               </p>
@@ -418,8 +474,9 @@ export default function Home() {
                 Deploy and maintain
               </h3>
 
-              <p className="text-[#1F241C]/60">
-                We launch the site, monitor it, and handle future updates.
+              <p className="text-[#1F241C]/60 leading-relaxed">
+                We launch the site, monitor it, and handle future updates so it
+                stays useful after launch.
               </p>
             </div>
           </div>
@@ -429,7 +486,7 @@ export default function Home() {
       {/* PRICING */}
       <section
         id="pricing"
-        className="py-28 px-6"
+        className="py-28 px-6 bg-[#FFFDF8]"
       >
         <div className="max-w-7xl mx-auto mb-20">
           <p className="text-sm tracking-[0.3em] text-[#7A5C3E]/60 mb-4 uppercase">
@@ -451,7 +508,7 @@ export default function Home() {
               $500
             </p>
 
-            <p className="text-[#1F241C]/60 mb-6">
+            <p className="text-[#1F241C]/60 mb-6 leading-relaxed">
               Single-page site for quick launches.
             </p>
 
@@ -490,7 +547,7 @@ export default function Home() {
               $1,500
             </p>
 
-            <p className="text-white/65 mb-6">
+            <p className="text-white/65 mb-6 leading-relaxed">
               Custom business website built to convert.
             </p>
 
@@ -529,7 +586,7 @@ export default function Home() {
               $3,000+
             </p>
 
-            <p className="text-[#1F241C]/60 mb-6">
+            <p className="text-[#1F241C]/60 mb-6 leading-relaxed">
               Advanced build for brands that need more.
             </p>
 
@@ -561,6 +618,57 @@ export default function Home() {
         </div>
       </section>
 
+      {/* FAQ */}
+      <section className="py-28 px-6">
+        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16">
+          <div>
+            <p className="text-sm tracking-[0.3em] text-[#7A5C3E]/60 mb-4 uppercase">
+              Questions
+            </p>
+
+            <h2 className="text-4xl md:text-5xl font-semibold leading-tight">
+              Built to move fast without feeling rushed.
+            </h2>
+          </div>
+
+          <div className="space-y-6">
+            <div className="border-t border-[#E2D2B8]/60 pt-6">
+              <h3 className="text-xl font-semibold mb-2">
+                How fast can a site launch?
+              </h3>
+
+              <p className="text-[#1F241C]/60 leading-relaxed">
+                Simple landing pages can move quickly. Larger builds depend on
+                the number of sections, content, and custom features needed.
+              </p>
+            </div>
+
+            <div className="border-t border-[#E2D2B8]/60 pt-6">
+              <h3 className="text-xl font-semibold mb-2">
+                Do you only build with AI?
+              </h3>
+
+              <p className="text-[#1F241C]/60 leading-relaxed">
+                No. AI helps speed up production, but the structure, design
+                decisions, quality control, and final implementation are handled
+                through a professional workflow.
+              </p>
+            </div>
+
+            <div className="border-t border-[#E2D2B8]/60 pt-6">
+              <h3 className="text-xl font-semibold mb-2">
+                Can the site be updated later?
+              </h3>
+
+              <p className="text-[#1F241C]/60 leading-relaxed">
+                Yes. Support can include edits, new sections, content changes,
+                or continued improvements after launch.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CONTACT */}
       <section
         id="contact"
@@ -576,7 +684,7 @@ export default function Home() {
               Tell us about your project.
             </h2>
 
-            <p className="text-white/65 max-w-lg">
+            <p className="text-white/65 max-w-lg leading-relaxed">
               We’ll respond with next steps and help you decide the right build
               for your business.
             </p>
@@ -640,9 +748,32 @@ export default function Home() {
               Birch Studio
             </p>
 
-            <p className="text-white/50">
+            <p className="text-white/50 leading-relaxed">
               Creative web development for growing businesses.
             </p>
+          </div>
+
+          <div className="flex flex-col md:items-end gap-2">
+            <a
+              href="#services"
+              className="text-white/40 hover:text-white text-sm transition"
+            >
+              Services
+            </a>
+
+            <a
+              href="#work"
+              className="text-white/40 hover:text-white text-sm transition"
+            >
+              Work
+            </a>
+
+            <a
+              href="#contact"
+              className="text-white/40 hover:text-white text-sm transition"
+            >
+              Contact
+            </a>
           </div>
 
           <p className="text-white/40 text-sm">
