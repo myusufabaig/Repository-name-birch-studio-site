@@ -77,6 +77,18 @@ export default function Home() {
         </div>
       </section>
 
+      {/* CREDIBILITY STRIP */}
+      <section className="px-6 pb-20">
+        <div className="max-w-7xl mx-auto rounded-full border border-[#E2D2B8]/60 bg-[#FFFDF8] px-6 py-4">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center text-xs tracking-[0.25em] uppercase text-[#7A5C3E]/70">
+            <p>Fast Builds</p>
+            <p>Clean Design</p>
+            <p>Mobile Ready</p>
+            <p>Lead Focused</p>
+          </div>
+        </div>
+      </section>
+
       {/* SERVICES */}
       <section id="services" className="py-28 px-6 bg-[#FFFDF8]">
         <div className="max-w-7xl mx-auto mb-20">
@@ -233,20 +245,25 @@ export default function Home() {
               Contact
             </p>
             <h2 className="text-4xl md:text-6xl font-semibold leading-tight mb-6">
-              Ready to build something warmer, sharper, and better?
+              Tell us about your project.
             </h2>
             <p className="text-white/65 max-w-lg">
-              Tell us what you need. We’ll help turn it into a fast, clean, and
-              reliable website.
+              We’ll respond with next steps and help you decide the right build
+              for your business.
             </p>
           </div>
 
-          {/* FIXED FORM */}
           <form
             action="https://formspree.io/f/xpqbwpbr"
             method="POST"
             className="space-y-4"
           >
+            <input
+              type="hidden"
+              name="_next"
+              value="https://repository-name-birch-studio-site.vercel.app/#contact"
+            />
+
             <input
               name="name"
               className="w-full rounded-2xl bg-[#F7F4ED] text-[#1F241C] px-4 py-4 transition focus:outline-none focus:ring-4 focus:ring-white/20"
@@ -281,6 +298,22 @@ export default function Home() {
           </form>
         </div>
       </section>
+
+      {/* FOOTER */}
+      <footer className="bg-[#1F241C] text-white px-6 py-10">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between gap-6">
+          <div>
+            <p className="text-2xl font-semibold mb-2">Birch Studio</p>
+            <p className="text-white/50">
+              Creative web development for growing businesses.
+            </p>
+          </div>
+
+          <p className="text-white/40 text-sm">
+            © 2026 Birch Studio. All rights reserved.
+          </p>
+        </div>
+      </footer>
     </main>
   );
 }
