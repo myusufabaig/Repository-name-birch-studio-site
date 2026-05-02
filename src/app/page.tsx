@@ -32,7 +32,7 @@ export default function Home() {
             <h1 className="text-5xl md:text-7xl font-semibold leading-tight mb-8 tracking-tight">
               Websites that look premium,
               <br />
-              and convert like they should.
+              and turn visitors into customers.
             </h1>
 
             <p className="text-lg text-[#1F241C]/65 mb-10 max-w-xl">
@@ -42,7 +42,7 @@ export default function Home() {
 
             <div className="flex gap-4">
               <a href="#contact" className="bg-[#2F3D2C] text-white px-8 py-4 rounded-full text-sm transition hover:scale-105 hover:bg-[#1F241C]">
-                Start a Project
+                Start My Project
               </a>
 
               <a href="#services" className="border border-[#7A5C3E]/40 text-[#7A5C3E] px-8 py-4 rounded-full text-sm transition hover:bg-[#E2D2B8]/30">
@@ -293,8 +293,12 @@ export default function Home() {
               type="submit"
               className="bg-[#E2D2B8] text-[#2F3D2C] px-6 py-4 rounded-full w-full transition hover:scale-[1.02] hover:bg-[#F7F4ED]"
             >
-              Submit Request
+              Start My Project
             </button>
+
+            <p className="text-xs text-white/40 text-center">
+              We typically respond within 24 hours.
+            </p>
           </form>
         </div>
       </section>
