@@ -31,7 +31,7 @@ export default function Home() {
               href="#work"
               className="hover:text-[#2F3D2C] transition"
             >
-              Research
+              Brand
             </a>
 
             <a
@@ -100,8 +100,8 @@ export default function Home() {
               className="text-lg text-[#1F241C]/65 mb-10 max-w-xl leading-relaxed"
             >
               Birch Studio builds modern websites for real businesses — clean,
-              fast, mobile-ready, and structured around the actions that drive
-              revenue.
+              warm, mobile-ready, and structured to help visitors understand
+              your brand and take the next step.
             </p>
 
             <div
@@ -118,7 +118,7 @@ export default function Home() {
                 href="#work"
                 className="border border-[#7A5C3E]/40 text-[#7A5C3E] px-8 py-4 rounded-full text-sm text-center transition hover:bg-[#E2D2B8]/30"
               >
-                See The Revenue Logic
+                See The Brand Showcase
               </a>
             </div>
           </div>
@@ -136,13 +136,13 @@ export default function Home() {
                 <div
                   className="font-semibold text-[#2F3D2C]"
                 >
-                  Revenue-Focused Website
+                  Brand Website Preview
                 </div>
 
                 <div
                   className="text-xs text-[#7A5C3E]/70"
                 >
-                  LIVE PREVIEW
+                  LIVE STRUCTURE
                 </div>
               </div>
 
@@ -275,14 +275,14 @@ export default function Home() {
             <h3
               className="text-2xl font-semibold mb-4"
             >
-              Creative Websites
+              Brand-First Websites
             </h3>
 
             <p
               className="text-[#1F241C]/60 leading-relaxed"
             >
-              Custom websites built around your business, your offer, and the
-              type of customers you want to attract.
+              Custom websites built around your business, your offer, your
+              visual style, and the type of customers you want to attract.
             </p>
           </div>
 
@@ -305,7 +305,7 @@ export default function Home() {
               className="text-white/65 leading-relaxed"
             >
               AI helps move production faster, while a controlled workflow keeps
-              the structure, design, and code clean.
+              the structure, design, and final site clean.
             </p>
           </div>
 
@@ -327,14 +327,14 @@ export default function Home() {
             <p
               className="text-[#1F241C]/60 leading-relaxed"
             >
-              Ongoing edits, fixes, performance improvements, and support after
-              the site goes live.
+              Ongoing edits, fixes, performance improvements, new sections, and
+              support after the site goes live.
             </p>
           </div>
         </div>
       </section>
 
-      {/* REVENUE LOGIC */}
+      {/* BRAND SHOWCASE */}
       <section
         id="work"
         className="py-32 px-6 bg-[#F7F4ED]"
@@ -348,14 +348,14 @@ export default function Home() {
             <p
               className="text-sm tracking-[0.3em] text-[#7A5C3E]/60 mb-4 uppercase"
             >
-              Revenue Logic
+              Brand Showcase
             </p>
 
             <h2
               className="text-4xl md:text-6xl font-semibold max-w-4xl leading-tight"
             >
-              Better websites do more than look good — they reduce friction,
-              improve trust, and create clearer paths to revenue.
+              A website should make your business feel clearer, warmer, and
+              easier to trust.
             </h2>
           </div>
 
@@ -372,13 +372,13 @@ export default function Home() {
                 <span
                   className="inline-flex items-center rounded-full bg-[#E2D2B8]/40 px-4 py-2 text-xs tracking-[0.18em] text-[#7A5C3E] uppercase"
                 >
-                  Research-Based Strategy
+                  Brand • Structure • Revenue
                 </span>
 
                 <span
                   className="inline-flex items-center rounded-full border border-[#DCCBB0] px-4 py-2 text-xs text-[#1F241C]/60"
                 >
-                  Speed • UX • Conversion
+                  Built for real businesses
                 </span>
               </div>
 
@@ -388,23 +388,21 @@ export default function Home() {
                 <p
                   className="text-sm uppercase tracking-[0.25em] text-[#7A5C3E]/60 mb-3"
                 >
-                  Why It Matters
+                  What We Create
                 </p>
 
                 <h3
                   className="text-3xl md:text-4xl font-semibold tracking-tight mb-4"
                 >
-                  Website improvements can directly affect conversion,
-                  engagement, and revenue.
+                  A polished place for your brand to live online.
                 </h3>
 
                 <p
                   className="text-lg text-[#1F241C]/65 max-w-2xl leading-relaxed"
                 >
-                  Research from Google and Deloitte found that improving mobile
-                  site speed by just 0.1 seconds increased retail conversions by
-                  8.4% and travel conversions by 10.1%. The same study found
-                  retail consumers spent 9.2% more after that speed improvement.
+                  Birch Studio creates websites that give your business a clear
+                  digital home — a place to show what you do, explain your
+                  offer, build trust, and guide visitors toward the next step.
                 </p>
               </div>
 
@@ -417,14 +415,14 @@ export default function Home() {
                   <p
                     className="text-xs tracking-[0.22em] uppercase text-[#7A5C3E]/60 mb-3"
                   >
-                    Speed
+                    Showcase
                   </p>
 
                   <p
                     className="text-sm text-[#1F241C]/70 leading-relaxed"
                   >
-                    Faster mobile experiences can improve conversion rates,
-                    page engagement, and willingness to spend.
+                    Present your business with a cleaner visual system,
+                    stronger hierarchy, and a better first impression.
                   </p>
                 </div>
 
@@ -440,8 +438,8 @@ export default function Home() {
                   <p
                     className="text-sm text-[#1F241C]/70 leading-relaxed"
                   >
-                    A clear offer and obvious next step reduce hesitation and
-                    help visitors take action.
+                    Make it easy for visitors to understand what you do, who you
+                    help, and why they should reach out.
                   </p>
                 </div>
 
@@ -451,14 +449,14 @@ export default function Home() {
                   <p
                     className="text-xs tracking-[0.22em] uppercase text-[#7A5C3E]/60 mb-3"
                   >
-                    UX
+                    Guidance
                   </p>
 
                   <p
                     className="text-sm text-[#1F241C]/70 leading-relaxed"
                   >
-                    Better user experience reduces friction in the path from
-                    visitor interest to inquiry or purchase.
+                    Create a smoother path from interest to action through
+                    better structure, calls-to-action, and contact flow.
                   </p>
                 </div>
               </div>
@@ -472,16 +470,17 @@ export default function Home() {
                   <p
                     className="text-sm tracking-[0.2em] uppercase text-[#7A5C3E]/60 mb-2"
                   >
-                    What Birch Studio Focuses On
+                    Your Website Should Show The Business
                   </p>
 
                   <p
                     className="text-[#1F241C]/70 leading-relaxed"
                   >
-                    We do not treat a website like a digital brochure. We build
-                    around speed, hierarchy, trust, offer clarity, mobile
-                    usability, and the conversion path from first impression to
-                    next step.
+                    The right site gives people a place to understand your
+                    services, your personality, your quality, your process, and
+                    why your business is worth trusting. It should feel like the
+                    best version of the company — not just a page with text on
+                    it.
                   </p>
                 </div>
 
@@ -497,10 +496,11 @@ export default function Home() {
                   <p
                     className="text-[#1F241C]/70 leading-relaxed"
                   >
-                    When a website is clearer and faster, every visitor becomes
-                    more valuable. The same ad spend, organic traffic, referral
-                    traffic, or social traffic has a better chance of turning
-                    into an inquiry, booking, or sale.
+                    Good design is not just aesthetic. Research supports the
+                    idea that speed, clarity, and user experience can influence
+                    conversion, engagement, and revenue. The design makes the
+                    brand easier to trust, and the structure makes the next step
+                    easier to take.
                   </p>
                 </div>
 
@@ -519,13 +519,13 @@ export default function Home() {
                     <div
                       className="rounded-2xl bg-[#F7F4ED] border border-[#E2D2B8]/50 px-4 py-3"
                     >
-                      Clear homepage structure
+                      Brand positioning and first impression
                     </div>
 
                     <div
                       className="rounded-2xl bg-[#F7F4ED] border border-[#E2D2B8]/50 px-4 py-3"
                     >
-                      Fast mobile-first layouts
+                      Clear service and offer structure
                     </div>
 
                     <div
@@ -544,83 +544,105 @@ export default function Home() {
               </div>
 
               <div
-                className="grid sm:grid-cols-3 gap-4"
+                className="rounded-[2rem] bg-[#F7F4ED] border border-[#E2D2B8]/50 p-6"
               >
-                <div
-                  className="rounded-[1.5rem] bg-[#2F3D2C] text-white p-5"
+                <p
+                  className="text-sm tracking-[0.25em] uppercase text-[#7A5C3E]/60 mb-4"
                 >
-                  <p
-                    className="text-xs tracking-[0.22em] uppercase text-white/45 mb-3"
-                  >
-                    Speed Impact
-                  </p>
+                  Research Support
+                </p>
 
-                  <p
-                    className="text-3xl font-semibold"
-                  >
-                    +8.4%
-                  </p>
-
-                  <p
-                    className="text-xs text-white/50 mt-2 leading-relaxed"
-                  >
-                    Retail conversion lift tied to 0.1s mobile speed
-                    improvement.
-                  </p>
-                </div>
+                <p
+                  className="text-[#1F241C]/70 leading-relaxed mb-6"
+                >
+                  Industry research shows that better digital experiences can
+                  affect performance. Google and Deloitte found that improving
+                  mobile site speed by 0.1 seconds was associated with higher
+                  retail conversions and higher average order value. Baymard
+                  research also shows that checkout UX improvements can create
+                  meaningful conversion lift for ecommerce experiences.
+                </p>
 
                 <div
-                  className="rounded-[1.5rem] bg-[#E2D2B8]/35 p-5"
+                  className="grid sm:grid-cols-3 gap-4"
                 >
-                  <p
-                    className="text-xs tracking-[0.22em] uppercase text-[#7A5C3E]/60 mb-3"
+                  <div
+                    className="rounded-[1.5rem] bg-[#2F3D2C] text-white p-5"
                   >
-                    Spend Impact
-                  </p>
+                    <p
+                      className="text-xs tracking-[0.22em] uppercase text-white/45 mb-3"
+                    >
+                      Speed Impact
+                    </p>
 
-                  <p
-                    className="text-3xl font-semibold text-[#1F241C]"
-                  >
-                    +9.2%
-                  </p>
+                    <p
+                      className="text-3xl font-semibold"
+                    >
+                      +8.4%
+                    </p>
 
-                  <p
-                    className="text-xs text-[#1F241C]/50 mt-2 leading-relaxed"
+                    <p
+                      className="text-xs text-white/50 mt-2 leading-relaxed"
+                    >
+                      Retail conversion lift tied to 0.1s mobile speed
+                      improvement.
+                    </p>
+                  </div>
+
+                  <div
+                    className="rounded-[1.5rem] bg-[#E2D2B8]/35 p-5"
                   >
-                    Retail average order value lift observed in the same study.
-                  </p>
+                    <p
+                      className="text-xs tracking-[0.22em] uppercase text-[#7A5C3E]/60 mb-3"
+                    >
+                      Spend Impact
+                    </p>
+
+                    <p
+                      className="text-3xl font-semibold text-[#1F241C]"
+                    >
+                      +9.2%
+                    </p>
+
+                    <p
+                      className="text-xs text-[#1F241C]/50 mt-2 leading-relaxed"
+                    >
+                      Retail average order value lift observed in the same
+                      study.
+                    </p>
+                  </div>
+
+                  <div
+                    className="rounded-[1.5rem] bg-[#E2D2B8]/35 p-5"
+                  >
+                    <p
+                      className="text-xs tracking-[0.22em] uppercase text-[#7A5C3E]/60 mb-3"
+                    >
+                      Checkout UX
+                    </p>
+
+                    <p
+                      className="text-3xl font-semibold text-[#1F241C]"
+                    >
+                      35%
+                    </p>
+
+                    <p
+                      className="text-xs text-[#1F241C]/50 mt-2 leading-relaxed"
+                    >
+                      Potential conversion-rate gain from checkout UX
+                      improvements.
+                    </p>
+                  </div>
                 </div>
 
-                <div
-                  className="rounded-[1.5rem] bg-[#E2D2B8]/35 p-5"
+                <p
+                  className="text-xs text-[#1F241C]/45 mt-4 leading-relaxed"
                 >
-                  <p
-                    className="text-xs tracking-[0.22em] uppercase text-[#7A5C3E]/60 mb-3"
-                  >
-                    Checkout UX
-                  </p>
-
-                  <p
-                    className="text-3xl font-semibold text-[#1F241C]"
-                  >
-                    35%
-                  </p>
-
-                  <p
-                    className="text-xs text-[#1F241C]/50 mt-2 leading-relaxed"
-                  >
-                    Potential conversion-rate gain from checkout UX
-                    improvements.
-                  </p>
-                </div>
+                  Research figures are industry benchmarks, not Birch Studio
+                  client results.
+                </p>
               </div>
-
-              <p
-                className="text-xs text-[#1F241C]/45 mt-4 leading-relaxed"
-              >
-                Research figures are industry benchmarks, not Birch Studio
-                client results.
-              </p>
             </div>
 
             {/* RIGHT SIDE */}
@@ -652,7 +674,7 @@ export default function Home() {
                   <p
                     className="text-xs tracking-[0.2em] uppercase text-[#7A5C3E]/55"
                   >
-                    Revenue Path Preview
+                    Brand Preview
                   </p>
                 </div>
 
@@ -665,18 +687,18 @@ export default function Home() {
                     <div
                       className="text-sm font-semibold text-[#1F241C]"
                     >
-                      Business Website Structure
+                      Your Brand Here
                     </div>
 
                     <div
                       className="hidden sm:flex gap-4 text-xs text-[#1F241C]/55"
                     >
                       <span>
-                        Offer
+                        Services
                       </span>
 
                       <span>
-                        Proof
+                        Story
                       </span>
 
                       <span>
@@ -817,14 +839,14 @@ export default function Home() {
                     <p
                       className="text-xs tracking-[0.22em] uppercase text-[#7A5C3E]/60 mb-2"
                     >
-                      Why it feels better
+                      Brand Space
                     </p>
 
                     <p
                       className="text-sm text-[#1F241C]/70 leading-relaxed"
                     >
-                      Clear structure helps visitors understand the offer faster
-                      and decide what to do next.
+                      A place to show your logo, services, story, work, and
+                      credibility without feeling crowded.
                     </p>
                   </div>
 
@@ -834,15 +856,53 @@ export default function Home() {
                     <p
                       className="text-xs tracking-[0.22em] uppercase text-[#7A5C3E]/60 mb-2"
                     >
-                      Conversion focus
+                      Customer Path
                     </p>
 
                     <p
                       className="text-sm text-[#1F241C]/70 leading-relaxed"
                     >
-                      Better hierarchy, faster access to trust signals, and
-                      clearer CTA placement support more inquiries.
+                      A cleaner path from first impression to inquiry, quote
+                      request, booking, or sale.
                     </p>
+                  </div>
+                </div>
+
+                <div
+                  className="mt-6 rounded-[1.5rem] bg-[#2F3D2C] p-6 text-white"
+                >
+                  <p
+                    className="text-xs tracking-[0.22em] uppercase text-white/45 mb-3"
+                  >
+                    What the buyer gets
+                  </p>
+
+                  <div
+                    className="grid grid-cols-2 gap-3 text-sm text-white/75"
+                  >
+                    <div
+                      className="rounded-2xl bg-white/10 px-4 py-3"
+                    >
+                      A stronger first impression
+                    </div>
+
+                    <div
+                      className="rounded-2xl bg-white/10 px-4 py-3"
+                    >
+                      Clear service explanation
+                    </div>
+
+                    <div
+                      className="rounded-2xl bg-white/10 px-4 py-3"
+                    >
+                      Better mobile experience
+                    </div>
+
+                    <div
+                      className="rounded-2xl bg-white/10 px-4 py-3"
+                    >
+                      A real lead capture path
+                    </div>
                   </div>
                 </div>
               </div>
@@ -856,7 +916,7 @@ export default function Home() {
               href="#contact"
               className="inline-flex items-center justify-center rounded-full bg-[#2F3D2C] px-8 py-4 text-sm text-white transition hover:scale-[1.02] hover:bg-[#1F241C]"
             >
-              Build Something Like This
+              Build A Brand Showcase
             </a>
           </div>
         </div>
@@ -898,20 +958,20 @@ export default function Home() {
             <p
               className="text-sm tracking-[0.25em] text-[#7A5C3E]/60 uppercase mb-5"
             >
-              Speed
+              Brand
             </p>
 
             <h3
               className="text-2xl font-semibold mb-4"
             >
-              Fast enough to launch.
+              A home for the business.
             </h3>
 
             <p
               className="text-[#1F241C]/60 leading-relaxed"
             >
-              We use AI-assisted development to move quickly without turning the
-              work into messy, random code.
+              Your website should show your work, explain your value, and make
+              the business feel established online.
             </p>
           </div>
 
@@ -977,14 +1037,15 @@ export default function Home() {
               <h3
                 className="text-xl font-semibold mb-2"
               >
-                Clarify the offer
+                Clarify the brand and offer
               </h3>
 
               <p
                 className="text-[#1F241C]/60 leading-relaxed"
               >
-                We define the site structure, message, sections, and conversion
-                path before the build starts.
+                We define what your business needs to communicate, what
+                visitors need to understand, and what action the website should
+                drive.
               </p>
             </div>
 
@@ -1000,14 +1061,14 @@ export default function Home() {
               <h3
                 className="text-xl font-semibold mb-2"
               >
-                Develop with taste
+                Design with taste
               </h3>
 
               <p
                 className="text-[#1F241C]/60 leading-relaxed"
               >
-                We use modern tools and AI-assisted development to build quickly
-                without losing design quality.
+                We build a warm, clean, mobile-ready site that makes your
+                business feel more credible and easier to trust.
               </p>
             </div>
 
@@ -1023,14 +1084,14 @@ export default function Home() {
               <h3
                 className="text-xl font-semibold mb-2"
               >
-                Deploy and maintain
+                Deploy and improve
               </h3>
 
               <p
                 className="text-[#1F241C]/60 leading-relaxed"
               >
-                We launch the site, monitor it, and handle future updates so it
-                stays useful after launch.
+                We launch the site, connect the lead flow, and support future
+                updates so the website can keep getting better.
               </p>
             </div>
           </div>
@@ -1079,7 +1140,8 @@ export default function Home() {
             <p
               className="text-[#1F241C]/60 mb-6 leading-relaxed"
             >
-              Single-page site for quick launches.
+              A clean one-page site for a quick launch or simple business
+              presence.
             </p>
 
             <ul
@@ -1130,7 +1192,8 @@ export default function Home() {
             <p
               className="text-white/65 mb-6 leading-relaxed"
             >
-              Custom business website built to convert.
+              A custom business website built to show the brand clearly and
+              guide visitors toward inquiries.
             </p>
 
             <ul
@@ -1179,7 +1242,8 @@ export default function Home() {
             <p
               className="text-[#1F241C]/60 mb-6 leading-relaxed"
             >
-              Advanced build for brands that need more.
+              A deeper build for brands that need more sections, stronger
+              content structure, and more custom direction.
             </p>
 
             <ul
@@ -1407,7 +1471,7 @@ export default function Home() {
               href="#work"
               className="text-white/40 hover:text-white text-sm transition"
             >
-              Research
+              Brand
             </a>
 
             <a
