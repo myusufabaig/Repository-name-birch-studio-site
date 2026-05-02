@@ -9,19 +9,38 @@ export default function Home() {
           </div>
 
           <div className="hidden md:flex gap-10 text-sm text-[#1F241C]/60">
-            <a href="#services" className="hover:text-[#2F3D2C] transition">
+            <a
+              href="#services"
+              className="hover:text-[#2F3D2C] transition"
+            >
               Services
             </a>
-            <a href="#work" className="hover:text-[#2F3D2C] transition">
+
+            <a
+              href="#work"
+              className="hover:text-[#2F3D2C] transition"
+            >
               Work
             </a>
-            <a href="#process" className="hover:text-[#2F3D2C] transition">
+
+            <a
+              href="#process"
+              className="hover:text-[#2F3D2C] transition"
+            >
               Process
             </a>
-            <a href="#pricing" className="hover:text-[#2F3D2C] transition">
+
+            <a
+              href="#pricing"
+              className="hover:text-[#2F3D2C] transition"
+            >
               Pricing
             </a>
-            <a href="#contact" className="hover:text-[#2F3D2C] transition">
+
+            <a
+              href="#contact"
+              className="hover:text-[#2F3D2C] transition"
+            >
               Contact
             </a>
           </div>
@@ -78,20 +97,27 @@ export default function Home() {
                 <div className="font-semibold text-[#2F3D2C]">
                   Client Website
                 </div>
-                <div className="text-xs text-[#7A5C3E]/70">LIVE PREVIEW</div>
+
+                <div className="text-xs text-[#7A5C3E]/70">
+                  LIVE PREVIEW
+                </div>
               </div>
 
               <div className="h-40 rounded-2xl bg-[#6F7F63] mb-6"></div>
 
               <div className="space-y-3 mb-8">
                 <div className="h-4 rounded-full bg-[#E2D2B8] w-3/4"></div>
+
                 <div className="h-4 rounded-full bg-[#E2D2B8]/60 w-full"></div>
+
                 <div className="h-4 rounded-full bg-[#E2D2B8]/60 w-5/6"></div>
               </div>
 
               <div className="grid grid-cols-3 gap-3">
                 <div className="h-24 rounded-2xl bg-[#F7F4ED] border border-[#E2D2B8]/50"></div>
+
                 <div className="h-24 rounded-2xl bg-[#F7F4ED] border border-[#E2D2B8]/50"></div>
+
                 <div className="h-24 rounded-2xl bg-[#F7F4ED] border border-[#E2D2B8]/50"></div>
               </div>
             </div>
@@ -103,20 +129,35 @@ export default function Home() {
       <section className="px-6 pb-20">
         <div className="max-w-7xl mx-auto rounded-full border border-[#E2D2B8]/60 bg-[#FFFDF8] px-6 py-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center text-xs tracking-[0.25em] uppercase text-[#7A5C3E]/70">
-            <p>Fast Builds</p>
-            <p>Clean Design</p>
-            <p>Mobile Ready</p>
-            <p>Lead Focused</p>
+            <p>
+              Fast Builds
+            </p>
+
+            <p>
+              Clean Design
+            </p>
+
+            <p>
+              Mobile Ready
+            </p>
+
+            <p>
+              Lead Focused
+            </p>
           </div>
         </div>
       </section>
 
       {/* SERVICES */}
-      <section id="services" className="py-28 px-6 bg-[#FFFDF8]">
+      <section
+        id="services"
+        className="py-28 px-6 bg-[#FFFDF8]"
+      >
         <div className="max-w-7xl mx-auto mb-20">
           <p className="text-sm tracking-[0.3em] text-[#7A5C3E]/60 mb-4 uppercase">
             Services
           </p>
+
           <h2 className="text-4xl md:text-6xl font-semibold max-w-3xl leading-tight">
             Built for businesses that want more than a basic website.
           </h2>
@@ -124,8 +165,14 @@ export default function Home() {
 
         <div className="grid md:grid-cols-3 gap-6 max-w-7xl mx-auto">
           <div className="rounded-[2rem] bg-[#F7F4ED] border border-[#E2D2B8]/40 p-8 transition duration-300 hover:-translate-y-2 hover:shadow-xl">
-            <p className="text-sm text-[#7A5C3E]/60 mb-10">01</p>
-            <h3 className="text-2xl font-semibold mb-4">Creative Websites</h3>
+            <p className="text-sm text-[#7A5C3E]/60 mb-10">
+              01
+            </p>
+
+            <h3 className="text-2xl font-semibold mb-4">
+              Creative Websites
+            </h3>
+
             <p className="text-[#1F241C]/60">
               Designed around your business, your personality, and the customers
               you want to attract.
@@ -133,8 +180,14 @@ export default function Home() {
           </div>
 
           <div className="rounded-[2rem] bg-[#2F3D2C] text-white p-8 transition duration-300 hover:-translate-y-2 hover:shadow-xl">
-            <p className="text-sm text-white/40 mb-10">02</p>
-            <h3 className="text-2xl font-semibold mb-4">AI Speed</h3>
+            <p className="text-sm text-white/40 mb-10">
+              02
+            </p>
+
+            <h3 className="text-2xl font-semibold mb-4">
+              AI Speed
+            </h3>
+
             <p className="text-white/65">
               AI helps us move fast, while a structured workflow keeps the site
               reliable and controlled.
@@ -142,8 +195,14 @@ export default function Home() {
           </div>
 
           <div className="rounded-[2rem] bg-[#F7F4ED] border border-[#E2D2B8]/40 p-8 transition duration-300 hover:-translate-y-2 hover:shadow-xl">
-            <p className="text-sm text-[#7A5C3E]/60 mb-10">03</p>
-            <h3 className="text-2xl font-semibold mb-4">Monthly Support</h3>
+            <p className="text-sm text-[#7A5C3E]/60 mb-10">
+              03
+            </p>
+
+            <h3 className="text-2xl font-semibold mb-4">
+              Monthly Support
+            </h3>
+
             <p className="text-[#1F241C]/60">
               Ongoing edits, fixes, monitoring, and improvements after launch.
             </p>
@@ -152,82 +211,36 @@ export default function Home() {
       </section>
 
       {/* SELECTED WORK */}
-      <section id="work" className="py-32 px-6">
+      <section
+        id="work"
+        className="py-32 px-6"
+      >
         <div className="max-w-7xl mx-auto mb-20">
           <p className="text-sm tracking-[0.3em] text-[#7A5C3E]/60 mb-4 uppercase">
             Selected Work
           </p>
+
           <h2 className="text-4xl md:text-6xl font-semibold max-w-3xl leading-tight">
             Built for real businesses. Designed to convert.
           </h2>
         </div>
 
         <div className="grid md:grid-cols-2 gap-10 max-w-7xl mx-auto">
-          {/* CASE STUDY CARD */}
-{/* SAMPLE BUILD (REAL FEEL) */}
-<div className="group rounded-[2.5rem] bg-[#FFFDF8] border border-[#E2D2B8]/50 p-6 transition duration-300 hover:-translate-y-2 hover:shadow-2xl">
-
-  <div className="rounded-[2rem] bg-[#F7F4ED] border border-[#E2D2B8]/50 p-5 mb-8">
-    <div className="flex items-center justify-between border-b border-[#E2D2B8]/50 pb-4 mb-6">
-      <div className="flex gap-2">
-        <span className="w-3 h-3 rounded-full bg-[#E2D2B8]"></span>
-        <span className="w-3 h-3 rounded-full bg-[#E2D2B8]/70"></span>
-        <span className="w-3 h-3 rounded-full bg-[#E2D2B8]/40"></span>
-      </div>
-      <p className="text-xs text-[#7A5C3E]/60">SAMPLE BUILD</p>
-    </div>
-
-    <div className="grid grid-cols-5 gap-4">
-      <div className="col-span-3 h-48 rounded-2xl bg-[#6F7F63] transition group-hover:bg-[#5F7254]"></div>
-
-      <div className="col-span-2 space-y-3">
-        <div className="h-4 rounded-full bg-[#E2D2B8] w-4/5"></div>
-        <div className="h-4 rounded-full bg-[#E2D2B8]/60"></div>
-        <div className="h-4 rounded-full bg-[#E2D2B8]/50 w-3/4"></div>
-        <div className="h-20 rounded-2xl bg-[#FFFDF8] border border-[#E2D2B8]/50 mt-6"></div>
-      </div>
-    </div>
-  </div>
-
-  <p className="text-sm tracking-[0.25em] text-[#7A5C3E]/60 uppercase mb-3">
-    Granite Supplier • Concept Build
-  </p>
-
-  <h3 className="text-2xl font-semibold mb-3">
-    A cleaner structure designed to drive more quote requests.
-  </h3>
-
-  <p className="text-[#1F241C]/60 mb-6">
-    This concept focuses on simplifying the offer, improving trust, and guiding
-    contractors toward a single action: requesting a quote.
-  </p>
-
-  <div className="grid grid-cols-3 gap-4 border-t border-[#E2D2B8]/50 pt-6">
-    <div>
-      <p className="text-sm font-semibold">Clear Offer</p>
-      <p className="text-xs text-[#1F241C]/50">Simplified messaging</p>
-    </div>
-
-    <div>
-      <p className="text-sm font-semibold">Quote Focused</p>
-      <p className="text-xs text-[#1F241C]/50">Single CTA path</p>
-    </div>
-
-    <div>
-      <p className="text-sm font-semibold">Mobile Ready</p>
-      <p className="text-xs text-[#1F241C]/50">Optimized layout</p>
-    </div>
-  </div>
-
-</div>
+          {/* SAMPLE BUILD */}
+          <div className="group rounded-[2.5rem] bg-[#FFFDF8] border border-[#E2D2B8]/50 p-6 transition duration-300 hover:-translate-y-2 hover:shadow-2xl">
             <div className="rounded-[2rem] bg-[#F7F4ED] border border-[#E2D2B8]/50 p-5 mb-8">
               <div className="flex items-center justify-between border-b border-[#E2D2B8]/50 pb-4 mb-6">
                 <div className="flex gap-2">
                   <span className="w-3 h-3 rounded-full bg-[#E2D2B8]"></span>
+
                   <span className="w-3 h-3 rounded-full bg-[#E2D2B8]/70"></span>
+
                   <span className="w-3 h-3 rounded-full bg-[#E2D2B8]/40"></span>
                 </div>
-                <p className="text-xs text-[#7A5C3E]/60">CASE STUDY</p>
+
+                <p className="text-xs text-[#7A5C3E]/60">
+                  SAMPLE BUILD
+                </p>
               </div>
 
               <div className="grid grid-cols-5 gap-4">
@@ -235,40 +248,58 @@ export default function Home() {
 
                 <div className="col-span-2 space-y-3">
                   <div className="h-4 rounded-full bg-[#E2D2B8] w-4/5"></div>
+
                   <div className="h-4 rounded-full bg-[#E2D2B8]/60"></div>
+
                   <div className="h-4 rounded-full bg-[#E2D2B8]/50 w-3/4"></div>
+
                   <div className="h-20 rounded-2xl bg-[#FFFDF8] border border-[#E2D2B8]/50 mt-6"></div>
                 </div>
               </div>
             </div>
 
             <p className="text-sm tracking-[0.25em] text-[#7A5C3E]/60 uppercase mb-3">
-              Case Study • Granite Supplier
+              Granite Supplier • Concept Build
             </p>
 
             <h3 className="text-2xl font-semibold mb-3">
-              Turning a confusing website into a clear lead machine.
+              A cleaner structure designed to drive more quote requests.
             </h3>
 
             <p className="text-[#1F241C]/60 mb-6">
-              Rebuilt a local granite supplier’s website to make offerings
-              clear, improve trust, and drive more contractor inquiries.
+              This concept focuses on simplifying the offer, improving trust,
+              and guiding contractors toward a single action: requesting a quote.
             </p>
 
             <div className="grid grid-cols-3 gap-4 border-t border-[#E2D2B8]/50 pt-6">
               <div>
-                <p className="text-2xl font-semibold">2.5x</p>
-                <p className="text-xs text-[#1F241C]/50">More inquiries</p>
+                <p className="text-sm font-semibold">
+                  Clear Offer
+                </p>
+
+                <p className="text-xs text-[#1F241C]/50">
+                  Simplified messaging
+                </p>
               </div>
 
               <div>
-                <p className="text-2xl font-semibold">48hr</p>
-                <p className="text-xs text-[#1F241C]/50">Build sprint</p>
+                <p className="text-sm font-semibold">
+                  Quote Focused
+                </p>
+
+                <p className="text-xs text-[#1F241C]/50">
+                  Single CTA path
+                </p>
               </div>
 
               <div>
-                <p className="text-2xl font-semibold">100%</p>
-                <p className="text-xs text-[#1F241C]/50">Mobile ready</p>
+                <p className="text-sm font-semibold">
+                  Mobile Ready
+                </p>
+
+                <p className="text-xs text-[#1F241C]/50">
+                  Optimized layout
+                </p>
               </div>
             </div>
           </div>
@@ -279,16 +310,24 @@ export default function Home() {
               <div className="flex items-center justify-between border-b border-[#E2D2B8]/50 pb-4 mb-6">
                 <div className="flex gap-2">
                   <span className="w-3 h-3 rounded-full bg-[#6F7F63]/60"></span>
+
                   <span className="w-3 h-3 rounded-full bg-[#E2D2B8]/70"></span>
+
                   <span className="w-3 h-3 rounded-full bg-[#7A5C3E]/30"></span>
                 </div>
-                <p className="text-xs text-[#7A5C3E]/60">LANDING PAGE</p>
+
+                <p className="text-xs text-[#7A5C3E]/60">
+                  LANDING PAGE
+                </p>
               </div>
 
               <div className="h-28 rounded-2xl bg-[#E2D2B8] mb-4"></div>
+
               <div className="grid grid-cols-3 gap-4">
                 <div className="h-28 rounded-2xl bg-[#FFFDF8] border border-[#E2D2B8]/50"></div>
+
                 <div className="h-28 rounded-2xl bg-[#6F7F63] transition group-hover:bg-[#5F7254]"></div>
+
                 <div className="h-28 rounded-2xl bg-[#FFFDF8] border border-[#E2D2B8]/50"></div>
               </div>
             </div>
@@ -310,9 +349,11 @@ export default function Home() {
               <span className="px-3 py-1 rounded-full bg-[#E2D2B8]/35 text-xs text-[#7A5C3E]">
                 Conversion
               </span>
+
               <span className="px-3 py-1 rounded-full bg-[#E2D2B8]/35 text-xs text-[#7A5C3E]">
                 Clean Layout
               </span>
+
               <span className="px-3 py-1 rounded-full bg-[#E2D2B8]/35 text-xs text-[#7A5C3E]">
                 Responsive
               </span>
@@ -322,12 +363,16 @@ export default function Home() {
       </section>
 
       {/* PROCESS */}
-      <section id="process" className="py-28 px-6 bg-[#FFFDF8]">
+      <section
+        id="process"
+        className="py-28 px-6 bg-[#FFFDF8]"
+      >
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16">
           <div>
             <p className="text-sm tracking-[0.3em] text-[#7A5C3E]/60 mb-4 uppercase">
               Process
             </p>
+
             <h2 className="text-4xl md:text-5xl font-semibold leading-tight">
               A thoughtful workflow, not random AI code.
             </h2>
@@ -335,8 +380,14 @@ export default function Home() {
 
           <div className="space-y-8">
             <div className="border-t border-[#E2D2B8]/60 pt-6 transition duration-300 hover:translate-x-2">
-              <p className="text-sm text-[#7A5C3E]/60 mb-2">01 / Strategy</p>
-              <h3 className="text-xl font-semibold mb-2">Clarify the offer</h3>
+              <p className="text-sm text-[#7A5C3E]/60 mb-2">
+                01 / Strategy
+              </p>
+
+              <h3 className="text-xl font-semibold mb-2">
+                Clarify the offer
+              </h3>
+
               <p className="text-[#1F241C]/60">
                 We define the site structure, message, sections, and conversion
                 path.
@@ -344,10 +395,14 @@ export default function Home() {
             </div>
 
             <div className="border-t border-[#E2D2B8]/60 pt-6 transition duration-300 hover:translate-x-2">
-              <p className="text-sm text-[#7A5C3E]/60 mb-2">02 / Build</p>
+              <p className="text-sm text-[#7A5C3E]/60 mb-2">
+                02 / Build
+              </p>
+
               <h3 className="text-xl font-semibold mb-2">
                 Develop with taste
               </h3>
+
               <p className="text-[#1F241C]/60">
                 We use modern tools and AI-assisted development to build quickly
                 without losing design quality.
@@ -355,10 +410,14 @@ export default function Home() {
             </div>
 
             <div className="border-t border-[#E2D2B8]/60 pt-6 transition duration-300 hover:translate-x-2">
-              <p className="text-sm text-[#7A5C3E]/60 mb-2">03 / Launch</p>
+              <p className="text-sm text-[#7A5C3E]/60 mb-2">
+                03 / Launch
+              </p>
+
               <h3 className="text-xl font-semibold mb-2">
                 Deploy and maintain
               </h3>
+
               <p className="text-[#1F241C]/60">
                 We launch the site, monitor it, and handle future updates.
               </p>
@@ -368,11 +427,15 @@ export default function Home() {
       </section>
 
       {/* PRICING */}
-      <section id="pricing" className="py-28 px-6">
+      <section
+        id="pricing"
+        className="py-28 px-6"
+      >
         <div className="max-w-7xl mx-auto mb-20">
           <p className="text-sm tracking-[0.3em] text-[#7A5C3E]/60 mb-4 uppercase">
             Pricing
           </p>
+
           <h2 className="text-4xl md:text-5xl font-semibold">
             Simple packages. Serious output.
           </h2>
@@ -380,16 +443,32 @@ export default function Home() {
 
         <div className="grid md:grid-cols-3 gap-6 max-w-7xl mx-auto">
           <div className="rounded-[2rem] bg-[#F7F4ED] border border-[#E2D2B8]/40 p-8 transition duration-300 hover:-translate-y-2 hover:shadow-xl">
-            <h3 className="text-xl font-semibold mb-4">Starter</h3>
-            <p className="text-4xl font-semibold mb-4">$500</p>
+            <h3 className="text-xl font-semibold mb-4">
+              Starter
+            </h3>
+
+            <p className="text-4xl font-semibold mb-4">
+              $500
+            </p>
+
             <p className="text-[#1F241C]/60 mb-6">
               Single-page site for quick launches.
             </p>
+
             <ul className="space-y-2 text-sm text-[#1F241C]/60 mb-8">
-              <li>• One-page website</li>
-              <li>• Mobile responsive</li>
-              <li>• Basic contact section</li>
+              <li>
+                • One-page website
+              </li>
+
+              <li>
+                • Mobile responsive
+              </li>
+
+              <li>
+                • Basic contact section
+              </li>
             </ul>
+
             <a
               href="#contact"
               className="border border-[#7A5C3E]/40 text-[#7A5C3E] px-6 py-3 rounded-full w-full block text-center transition hover:bg-[#E2D2B8]/30"
@@ -402,17 +481,37 @@ export default function Home() {
             <p className="text-xs tracking-[0.3em] text-white/50 mb-4">
               MOST POPULAR
             </p>
-            <h3 className="text-xl font-semibold mb-4">Business</h3>
-            <p className="text-4xl font-semibold mb-4">$1,500</p>
+
+            <h3 className="text-xl font-semibold mb-4">
+              Business
+            </h3>
+
+            <p className="text-4xl font-semibold mb-4">
+              $1,500
+            </p>
+
             <p className="text-white/65 mb-6">
               Custom business website built to convert.
             </p>
+
             <ul className="space-y-2 text-sm text-white/70 mb-8">
-              <li>• Multi-section site</li>
-              <li>• Custom design direction</li>
-              <li>• SEO-ready structure</li>
-              <li>• Launch support</li>
+              <li>
+                • Multi-section site
+              </li>
+
+              <li>
+                • Custom design direction
+              </li>
+
+              <li>
+                • SEO-ready structure
+              </li>
+
+              <li>
+                • Launch support
+              </li>
             </ul>
+
             <a
               href="#contact"
               className="bg-[#F7F4ED] text-[#2F3D2C] px-6 py-3 rounded-full w-full block text-center transition hover:bg-white"
@@ -422,17 +521,36 @@ export default function Home() {
           </div>
 
           <div className="rounded-[2rem] bg-[#F7F4ED] border border-[#E2D2B8]/40 p-8 transition duration-300 hover:-translate-y-2 hover:shadow-xl">
-            <h3 className="text-xl font-semibold mb-4">Premium</h3>
-            <p className="text-4xl font-semibold mb-4">$3,000+</p>
+            <h3 className="text-xl font-semibold mb-4">
+              Premium
+            </h3>
+
+            <p className="text-4xl font-semibold mb-4">
+              $3,000+
+            </p>
+
             <p className="text-[#1F241C]/60 mb-6">
               Advanced build for brands that need more.
             </p>
+
             <ul className="space-y-2 text-sm text-[#1F241C]/60 mb-8">
-              <li>• Custom features</li>
-              <li>• Branding refinement</li>
-              <li>• Priority delivery</li>
-              <li>• Ongoing support</li>
+              <li>
+                • Custom features
+              </li>
+
+              <li>
+                • Branding refinement
+              </li>
+
+              <li>
+                • Priority delivery
+              </li>
+
+              <li>
+                • Ongoing support
+              </li>
             </ul>
+
             <a
               href="#contact"
               className="border border-[#7A5C3E]/40 text-[#7A5C3E] px-6 py-3 rounded-full w-full block text-center transition hover:bg-[#E2D2B8]/30"
@@ -444,15 +562,20 @@ export default function Home() {
       </section>
 
       {/* CONTACT */}
-      <section id="contact" className="py-28 px-6 bg-[#2F3D2C] text-white">
+      <section
+        id="contact"
+        className="py-28 px-6 bg-[#2F3D2C] text-white"
+      >
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16">
           <div>
             <p className="text-sm tracking-[0.3em] text-white/40 mb-4 uppercase">
               Contact
             </p>
+
             <h2 className="text-4xl md:text-6xl font-semibold leading-tight mb-6">
               Tell us about your project.
             </h2>
+
             <p className="text-white/65 max-w-lg">
               We’ll respond with next steps and help you decide the right build
               for your business.
@@ -513,7 +636,10 @@ export default function Home() {
       <footer className="bg-[#1F241C] text-white px-6 py-10">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between gap-6">
           <div>
-            <p className="text-2xl font-semibold mb-2">Birch Studio</p>
+            <p className="text-2xl font-semibold mb-2">
+              Birch Studio
+            </p>
+
             <p className="text-white/50">
               Creative web development for growing businesses.
             </p>
