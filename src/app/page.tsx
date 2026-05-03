@@ -250,120 +250,81 @@ export default function Home() {
         </div>
       </section>
 
-      {/* BRAND SHOWCASE */}
+      {/* BRAND */}
       <section id="brand" className="py-28 px-6 bg-[#F7F4ED]">
         <div className="max-w-7xl mx-auto">
           <div className="mb-14">
             <p className="text-sm tracking-[0.3em] text-[#7A5C3E]/60 mb-4 uppercase">
-              Brand Showcase
+              Brand
             </p>
 
             <h2 className="text-4xl md:text-5xl font-semibold max-w-3xl leading-tight">
-              Make the business easier to trust.
+              Your website should make the business easier to understand.
             </h2>
 
             <p className="text-lg text-[#1F241C]/60 max-w-2xl mt-6 leading-relaxed">
-              We create a place for the buyer’s brand to live online — services,
-              story, work, credibility, and a simple path to reach out.
+              We create clean, modern websites that show your brand, explain
+              your services, and make it simple for customers to reach out.
             </p>
           </div>
 
           <div className="grid lg:grid-cols-[0.9fr_1.1fr] gap-10 items-stretch">
             {/* LEFT COPY */}
             <div className="rounded-[2.5rem] border border-[#E2D2B8]/50 bg-[#FFFDF8] p-8 md:p-10 shadow-[0_20px_60px_rgba(47,61,44,0.06)]">
-              <div className="grid gap-4 mb-10">
+              <div className="grid gap-4 mb-8">
                 <div className="rounded-[1.5rem] bg-[#F7F4ED] border border-[#E2D2B8]/50 p-5">
                   <p className="text-xs tracking-[0.22em] uppercase text-[#7A5C3E]/60 mb-3">
-                    Showcase
+                    Show the brand
                   </p>
 
                   <p className="text-sm text-[#1F241C]/70 leading-relaxed">
-                    Present the business with a cleaner visual system and a
-                    stronger first impression.
+                    Give visitors a clear first impression of who you are and
+                    what makes the business credible.
                   </p>
                 </div>
 
                 <div className="rounded-[1.5rem] bg-[#F7F4ED] border border-[#E2D2B8]/50 p-5">
                   <p className="text-xs tracking-[0.22em] uppercase text-[#7A5C3E]/60 mb-3">
-                    Clarify
+                    Explain the offer
                   </p>
 
                   <p className="text-sm text-[#1F241C]/70 leading-relaxed">
-                    Make it easy to understand what the business does and why
-                    someone should reach out.
+                    Make your services easy to understand without making people
+                    dig for answers.
                   </p>
                 </div>
 
                 <div className="rounded-[1.5rem] bg-[#F7F4ED] border border-[#E2D2B8]/50 p-5">
                   <p className="text-xs tracking-[0.22em] uppercase text-[#7A5C3E]/60 mb-3">
-                    Guide
+                    Guide the next step
                   </p>
 
                   <p className="text-sm text-[#1F241C]/70 leading-relaxed">
-                    Create a smoother path from first impression to quote
-                    request, booking, or sale.
+                    Give visitors a clear path to call, book, request a quote,
+                    or send a message.
+                  </p>
+                </div>
+
+                <div className="rounded-[1.5rem] bg-[#F7F4ED] border border-[#E2D2B8]/50 p-5">
+                  <p className="text-xs tracking-[0.22em] uppercase text-[#7A5C3E]/60 mb-3">
+                    Support growth
+                  </p>
+
+                  <p className="text-sm text-[#1F241C]/70 leading-relaxed">
+                    Build a site that can be updated as the business grows.
                   </p>
                 </div>
               </div>
 
               <div className="rounded-[2rem] bg-[#F7F4ED] border border-[#E2D2B8]/50 p-6">
                 <p className="text-sm tracking-[0.25em] uppercase text-[#7A5C3E]/60 mb-4">
-                  Research Support
+                  Why it matters
                 </p>
 
-                <p className="text-[#1F241C]/65 leading-relaxed mb-6">
-                  Better websites are not just prettier. Research shows speed,
-                  clarity, and user experience can influence conversion,
-                  engagement, and revenue.
-                </p>
-
-                <div className="grid sm:grid-cols-3 gap-4">
-                  <div className="rounded-[1.5rem] bg-[#2F3D2C] text-white p-5">
-                    <p className="text-xs uppercase text-white/45 mb-3">
-                      Speed
-                    </p>
-
-                    <p className="text-3xl font-semibold">+8.4%</p>
-
-                    <p className="text-xs text-white/50 mt-2 leading-relaxed">
-                      Retail conversion lift from 0.1s mobile speed improvement.
-                    </p>
-                  </div>
-
-                  <div className="rounded-[1.5rem] bg-[#E2D2B8]/35 p-5">
-                    <p className="text-xs uppercase text-[#7A5C3E]/60 mb-3">
-                      Spend
-                    </p>
-
-                    <p className="text-3xl font-semibold text-[#1F241C]">
-                      +9.2%
-                    </p>
-
-                    <p className="text-xs text-[#1F241C]/50 mt-2 leading-relaxed">
-                      Retail average order value lift observed in the same
-                      study.
-                    </p>
-                  </div>
-
-                  <div className="rounded-[1.5rem] bg-[#E2D2B8]/35 p-5">
-                    <p className="text-xs uppercase text-[#7A5C3E]/60 mb-3">
-                      UX
-                    </p>
-
-                    <p className="text-3xl font-semibold text-[#1F241C]">
-                      35%
-                    </p>
-
-                    <p className="text-xs text-[#1F241C]/50 mt-2 leading-relaxed">
-                      Potential conversion-rate gain from checkout UX
-                      improvements.
-                    </p>
-                  </div>
-                </div>
-
-                <p className="text-xs text-[#1F241C]/45 mt-4 leading-relaxed">
-                  Research figures are industry benchmarks, not Birch Studio
-                  client results.
+                <p className="text-[#1F241C]/65 leading-relaxed">
+                  Research supports what business owners already know: faster,
+                  clearer websites can improve engagement, trust, and
+                  conversion.
                 </p>
               </div>
             </div>
@@ -481,7 +442,7 @@ export default function Home() {
               href="#contact"
               className="inline-flex items-center justify-center rounded-full bg-[#2F3D2C] px-8 py-4 text-sm text-white transition hover:scale-[1.02] hover:bg-[#1F241C]"
             >
-              Build A Brand Showcase
+              Build A Better Website
             </a>
           </div>
         </div>
