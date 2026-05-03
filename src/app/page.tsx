@@ -1,14 +1,125 @@
 export default function Home() {
   return (
     <main className="min-h-screen bg-[#F7F4ED] text-[#1F241C]">
+      <style>
+        {`
+          @keyframes fadeUp {
+            from {
+              opacity: 0;
+              transform: translateY(18px);
+            }
+            to {
+              opacity: 1;
+              transform: translateY(0);
+            }
+          }
+
+          @keyframes floatSlow {
+            0%, 100% {
+              transform: translateY(0);
+            }
+            50% {
+              transform: translateY(-10px);
+            }
+          }
+
+          @keyframes softShimmer {
+            0% {
+              transform: translateX(-120%);
+              opacity: 0;
+            }
+            35% {
+              opacity: 0.18;
+            }
+            100% {
+              transform: translateX(120%);
+              opacity: 0;
+            }
+          }
+
+          @keyframes slowPulse {
+            0%, 100% {
+              opacity: 0.35;
+              transform: scale(1);
+            }
+            50% {
+              opacity: 0.55;
+              transform: scale(1.04);
+            }
+          }
+
+          .animate-fade-up {
+            animation: fadeUp 0.8s ease-out both;
+          }
+
+          .animate-fade-up-delay-1 {
+            animation: fadeUp 0.8s ease-out 0.12s both;
+          }
+
+          .animate-fade-up-delay-2 {
+            animation: fadeUp 0.8s ease-out 0.24s both;
+          }
+
+          .animate-fade-up-delay-3 {
+            animation: fadeUp 0.8s ease-out 0.36s both;
+          }
+
+          .animate-float-slow {
+            animation: floatSlow 6s ease-in-out infinite;
+          }
+
+          .animate-soft-pulse {
+            animation: slowPulse 8s ease-in-out infinite;
+          }
+
+          .premium-shimmer {
+            position: relative;
+            overflow: hidden;
+          }
+
+          .premium-shimmer::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 45%;
+            height: 100%;
+            background: linear-gradient(
+              90deg,
+              transparent,
+              rgba(255,255,255,0.38),
+              transparent
+            );
+            transform: translateX(-120%);
+            animation: softShimmer 6.5s ease-in-out infinite;
+            pointer-events: none;
+          }
+
+          @media (prefers-reduced-motion: reduce) {
+            .animate-fade-up,
+            .animate-fade-up-delay-1,
+            .animate-fade-up-delay-2,
+            .animate-fade-up-delay-3,
+            .animate-float-slow,
+            .animate-soft-pulse,
+            .premium-shimmer::after {
+              animation: none !important;
+            }
+          }
+        `}
+      </style>
+
       {/* NAVBAR */}
       <nav className="fixed top-0 left-0 right-0 z-50 border-b border-[#E2D2B8]/40 bg-[#F7F4ED]/85 backdrop-blur-md">
         <div className="max-w-7xl mx-auto flex items-center justify-between px-6 md:px-8 py-5">
-          <a href="#top" className="flex items-center gap-3">
+          <a
+            href="#top"
+            className="flex items-center gap-3 transition duration-300 hover:scale-[1.02]"
+          >
             <img
               src="/birch-logo.png"
               alt="Birch Studio logo"
-              className="h-9 w-9 object-contain"
+              className="h-9 w-9 object-contain transition duration-300 hover:rotate-[2deg]"
             />
 
             <span className="text-2xl md:text-3xl font-semibold tracking-tight">
@@ -36,7 +147,7 @@ export default function Home() {
 
           <a
             href="#contact"
-            className="bg-[#2F3D2C] text-white px-5 py-2 rounded-full text-sm transition hover:scale-105 hover:bg-[#1F241C]"
+            className="bg-[#2F3D2C] text-white px-5 py-2 rounded-full text-sm transition duration-300 hover:-translate-y-0.5 hover:scale-105 hover:bg-[#1F241C] hover:shadow-lg"
           >
             Get Quote
           </a>
@@ -45,11 +156,11 @@ export default function Home() {
 
       {/* HERO */}
       <section id="top" className="pt-40 pb-20 px-6 relative overflow-hidden">
-        <div className="absolute top-[-240px] right-[-220px] w-[620px] h-[620px] rounded-full bg-[#E2D2B8]/35 blur-[120px]" />
-        <div className="absolute bottom-[-260px] left-[-220px] w-[560px] h-[560px] rounded-full bg-[#6F7F63]/10 blur-[120px]" />
+        <div className="absolute top-[-240px] right-[-220px] w-[620px] h-[620px] rounded-full bg-[#E2D2B8]/35 blur-[120px] animate-soft-pulse" />
+        <div className="absolute bottom-[-260px] left-[-220px] w-[560px] h-[560px] rounded-full bg-[#6F7F63]/10 blur-[120px] animate-soft-pulse" />
 
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center relative">
-          <div>
+          <div className="animate-fade-up">
             <div className="inline-block mb-6 px-4 py-2 rounded-full bg-[#E2D2B8]/35 text-xs tracking-[0.25em] text-[#7A5C3E]">
               DESIGN-LED • FAST BUILD • LEAD-FOCUSED
             </div>
@@ -69,14 +180,14 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row gap-4">
               <a
                 href="#contact"
-                className="bg-[#2F3D2C] text-white px-8 py-4 rounded-full text-sm text-center transition hover:scale-105 hover:bg-[#1F241C]"
+                className="bg-[#2F3D2C] text-white px-8 py-4 rounded-full text-sm text-center transition duration-300 hover:-translate-y-0.5 hover:scale-105 hover:bg-[#1F241C] hover:shadow-xl"
               >
                 Start My Project
               </a>
 
               <a
                 href="#pricing"
-                className="border border-[#7A5C3E]/40 text-[#7A5C3E] px-8 py-4 rounded-full text-sm text-center transition hover:bg-[#E2D2B8]/30"
+                className="border border-[#7A5C3E]/40 text-[#7A5C3E] px-8 py-4 rounded-full text-sm text-center transition duration-300 hover:-translate-y-0.5 hover:bg-[#E2D2B8]/30"
               >
                 View Pricing
               </a>
@@ -84,8 +195,8 @@ export default function Home() {
           </div>
 
           {/* HERO MOCKUP */}
-          <div className="rounded-[2rem] bg-[#E2D2B8]/35 p-5 shadow-xl transition duration-500 hover:scale-[1.02]">
-            <div className="rounded-[1.5rem] bg-[#FFFDF8] p-6 min-h-[420px] border border-[#E2D2B8]/50">
+          <div className="rounded-[2rem] bg-[#E2D2B8]/35 p-5 shadow-xl transition duration-500 hover:scale-[1.02] animate-float-slow animate-fade-up-delay-1">
+            <div className="rounded-[1.5rem] bg-[#FFFDF8] p-6 min-h-[420px] border border-[#E2D2B8]/50 premium-shimmer">
               <div className="flex justify-between items-center border-b border-[#E2D2B8]/40 pb-4 mb-8">
                 <div className="font-semibold text-[#2F3D2C]">
                   Brand Website Preview
@@ -114,9 +225,9 @@ export default function Home() {
               </div>
 
               <div className="grid grid-cols-3 gap-3">
-                <div className="h-24 rounded-2xl bg-[#F7F4ED] border border-[#E2D2B8]/50" />
-                <div className="h-24 rounded-2xl bg-[#F7F4ED] border border-[#E2D2B8]/50" />
-                <div className="h-24 rounded-2xl bg-[#F7F4ED] border border-[#E2D2B8]/50" />
+                <div className="h-24 rounded-2xl bg-[#F7F4ED] border border-[#E2D2B8]/50 transition duration-300 hover:bg-[#E2D2B8]/20" />
+                <div className="h-24 rounded-2xl bg-[#F7F4ED] border border-[#E2D2B8]/50 transition duration-300 hover:bg-[#E2D2B8]/20" />
+                <div className="h-24 rounded-2xl bg-[#F7F4ED] border border-[#E2D2B8]/50 transition duration-300 hover:bg-[#E2D2B8]/20" />
               </div>
             </div>
           </div>
@@ -125,10 +236,10 @@ export default function Home() {
 
       {/* QUICK VALUE */}
       <section className="px-6 pb-20">
-        <div className="max-w-7xl mx-auto rounded-[2rem] border border-[#E2D2B8]/60 bg-[#FFFDF8] p-6 md:p-8">
+        <div className="max-w-7xl mx-auto rounded-[2rem] border border-[#E2D2B8]/60 bg-[#FFFDF8] p-6 md:p-8 animate-fade-up-delay-2 transition duration-500 hover:shadow-xl">
           <div className="grid md:grid-cols-[1fr_auto] gap-8 items-center">
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
-              <div>
+              <div className="transition duration-300 hover:-translate-y-1">
                 <p className="text-sm font-semibold mb-2">
                   Polished brand presence
                 </p>
@@ -137,7 +248,7 @@ export default function Home() {
                 </p>
               </div>
 
-              <div>
+              <div className="transition duration-300 hover:-translate-y-1">
                 <p className="text-sm font-semibold mb-2">
                   Clear service explanation
                 </p>
@@ -146,7 +257,7 @@ export default function Home() {
                 </p>
               </div>
 
-              <div>
+              <div className="transition duration-300 hover:-translate-y-1">
                 <p className="text-sm font-semibold mb-2">
                   Lead-ready contact flow
                 </p>
@@ -155,7 +266,7 @@ export default function Home() {
                 </p>
               </div>
 
-              <div>
+              <div className="transition duration-300 hover:-translate-y-1">
                 <p className="text-sm font-semibold mb-2">
                   Mobile-ready build
                 </p>
@@ -167,7 +278,7 @@ export default function Home() {
 
             <a
               href="#contact"
-              className="bg-[#2F3D2C] text-white px-7 py-4 rounded-full text-sm text-center transition hover:scale-105 hover:bg-[#1F241C]"
+              className="bg-[#2F3D2C] text-white px-7 py-4 rounded-full text-sm text-center transition duration-300 hover:-translate-y-0.5 hover:scale-105 hover:bg-[#1F241C] hover:shadow-xl"
             >
               Get Started
             </a>
@@ -177,7 +288,7 @@ export default function Home() {
 
       {/* SERVICES */}
       <section id="services" className="py-24 px-6 bg-[#FFFDF8]">
-        <div className="max-w-7xl mx-auto mb-16">
+        <div className="max-w-7xl mx-auto mb-16 animate-fade-up">
           <p className="text-sm tracking-[0.3em] text-[#7A5C3E]/60 mb-4 uppercase">
             Services
           </p>
@@ -188,7 +299,7 @@ export default function Home() {
         </div>
 
         <div className="grid md:grid-cols-3 gap-6 max-w-7xl mx-auto">
-          <div className="rounded-[2rem] bg-[#F7F4ED] border border-[#E2D2B8]/40 p-8 transition duration-300 hover:-translate-y-2 hover:shadow-xl">
+          <div className="rounded-[2rem] bg-[#F7F4ED] border border-[#E2D2B8]/40 p-8 transition duration-300 hover:-translate-y-2 hover:shadow-xl animate-fade-up">
             <p className="text-sm text-[#7A5C3E]/60 mb-10">01</p>
 
             <h3 className="text-2xl font-semibold mb-4">
@@ -201,7 +312,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="rounded-[2rem] bg-[#2F3D2C] text-white p-8 transition duration-300 hover:-translate-y-2 hover:shadow-xl">
+          <div className="rounded-[2rem] bg-[#2F3D2C] text-white p-8 transition duration-300 hover:-translate-y-2 hover:shadow-xl animate-fade-up-delay-1">
             <p className="text-sm text-white/40 mb-10">02</p>
 
             <h3 className="text-2xl font-semibold mb-4">
@@ -214,7 +325,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="rounded-[2rem] bg-[#F7F4ED] border border-[#E2D2B8]/40 p-8 transition duration-300 hover:-translate-y-2 hover:shadow-xl">
+          <div className="rounded-[2rem] bg-[#F7F4ED] border border-[#E2D2B8]/40 p-8 transition duration-300 hover:-translate-y-2 hover:shadow-xl animate-fade-up-delay-2">
             <p className="text-sm text-[#7A5C3E]/60 mb-10">03</p>
 
             <h3 className="text-2xl font-semibold mb-4">
@@ -230,7 +341,7 @@ export default function Home() {
 
       {/* CTA BREAK */}
       <section className="py-16 px-6 bg-[#FFFDF8]">
-        <div className="max-w-7xl mx-auto rounded-[2rem] bg-[#2F3D2C] text-white p-8 md:p-10 grid md:grid-cols-[1fr_auto] gap-6 items-center">
+        <div className="max-w-7xl mx-auto rounded-[2rem] bg-[#2F3D2C] text-white p-8 md:p-10 grid md:grid-cols-[1fr_auto] gap-6 items-center animate-fade-up premium-shimmer">
           <div>
             <p className="text-sm tracking-[0.25em] uppercase text-white/45 mb-3">
               Ready when you are
@@ -243,7 +354,7 @@ export default function Home() {
 
           <a
             href="#contact"
-            className="bg-[#F7F4ED] text-[#2F3D2C] px-8 py-4 rounded-full text-sm text-center transition hover:bg-white"
+            className="bg-[#F7F4ED] text-[#2F3D2C] px-8 py-4 rounded-full text-sm text-center transition duration-300 hover:-translate-y-0.5 hover:scale-105 hover:bg-white"
           >
             Start My Project
           </a>
@@ -253,26 +364,27 @@ export default function Home() {
       {/* BRAND */}
       <section id="brand" className="py-28 px-6 bg-[#F7F4ED]">
         <div className="max-w-7xl mx-auto">
-          <div className="mb-14">
+          <div className="mb-14 animate-fade-up">
             <p className="text-sm tracking-[0.3em] text-[#7A5C3E]/60 mb-4 uppercase">
-              Brand
+              Brand Showcase
             </p>
 
             <h2 className="text-4xl md:text-5xl font-semibold max-w-3xl leading-tight">
-              Your website should make the business easier to understand.
+              Make your business easier to trust.
             </h2>
 
             <p className="text-lg text-[#1F241C]/60 max-w-2xl mt-6 leading-relaxed">
-              We create clean, modern websites that show your brand, explain
-              your services, and make it simple for customers to reach out.
+              We create a clean online home for your brand — a place to show
+              your services, tell your story, build credibility, and make it
+              easy for customers to reach out.
             </p>
           </div>
 
           <div className="grid lg:grid-cols-[0.9fr_1.1fr] gap-10 items-stretch">
             {/* LEFT COPY */}
-            <div className="rounded-[2.5rem] border border-[#E2D2B8]/50 bg-[#FFFDF8] p-8 md:p-10 shadow-[0_20px_60px_rgba(47,61,44,0.06)]">
+            <div className="rounded-[2.5rem] border border-[#E2D2B8]/50 bg-[#FFFDF8] p-8 md:p-10 shadow-[0_20px_60px_rgba(47,61,44,0.06)] animate-fade-up-delay-1 transition duration-500 hover:shadow-2xl">
               <div className="grid gap-4 mb-8">
-                <div className="rounded-[1.5rem] bg-[#F7F4ED] border border-[#E2D2B8]/50 p-5">
+                <div className="rounded-[1.5rem] bg-[#F7F4ED] border border-[#E2D2B8]/50 p-5 transition duration-300 hover:-translate-y-1 hover:shadow-md">
                   <p className="text-xs tracking-[0.22em] uppercase text-[#7A5C3E]/60 mb-3">
                     Show the brand
                   </p>
@@ -283,7 +395,7 @@ export default function Home() {
                   </p>
                 </div>
 
-                <div className="rounded-[1.5rem] bg-[#F7F4ED] border border-[#E2D2B8]/50 p-5">
+                <div className="rounded-[1.5rem] bg-[#F7F4ED] border border-[#E2D2B8]/50 p-5 transition duration-300 hover:-translate-y-1 hover:shadow-md">
                   <p className="text-xs tracking-[0.22em] uppercase text-[#7A5C3E]/60 mb-3">
                     Explain the offer
                   </p>
@@ -294,7 +406,7 @@ export default function Home() {
                   </p>
                 </div>
 
-                <div className="rounded-[1.5rem] bg-[#F7F4ED] border border-[#E2D2B8]/50 p-5">
+                <div className="rounded-[1.5rem] bg-[#F7F4ED] border border-[#E2D2B8]/50 p-5 transition duration-300 hover:-translate-y-1 hover:shadow-md">
                   <p className="text-xs tracking-[0.22em] uppercase text-[#7A5C3E]/60 mb-3">
                     Guide the next step
                   </p>
@@ -305,7 +417,7 @@ export default function Home() {
                   </p>
                 </div>
 
-                <div className="rounded-[1.5rem] bg-[#F7F4ED] border border-[#E2D2B8]/50 p-5">
+                <div className="rounded-[1.5rem] bg-[#F7F4ED] border border-[#E2D2B8]/50 p-5 transition duration-300 hover:-translate-y-1 hover:shadow-md">
                   <p className="text-xs tracking-[0.22em] uppercase text-[#7A5C3E]/60 mb-3">
                     Support growth
                   </p>
@@ -316,22 +428,57 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="rounded-[2rem] bg-[#F7F4ED] border border-[#E2D2B8]/50 p-6">
+              <div className="rounded-[2rem] bg-[#F7F4ED] border border-[#E2D2B8]/50 p-6 transition duration-300 hover:shadow-lg">
                 <p className="text-sm tracking-[0.25em] uppercase text-[#7A5C3E]/60 mb-4">
                   Why it matters
                 </p>
 
-                <p className="text-[#1F241C]/65 leading-relaxed">
-                  Research supports what business owners already know: faster,
-                  clearer websites can improve engagement, trust, and
-                  conversion.
+                <p className="text-[#1F241C]/65 leading-relaxed mb-6">
+                  Most customers check a business online before they ever call,
+                  book, or ask for a quote. A better website helps your business
+                  feel more real, more trustworthy, and easier to choose.
                 </p>
+
+                <div className="grid sm:grid-cols-3 gap-4">
+                  <div className="rounded-[1.5rem] bg-[#FFFDF8] border border-[#E2D2B8]/50 p-5 transition duration-300 hover:-translate-y-1 hover:shadow-md">
+                    <p className="text-sm font-semibold mb-2">
+                      Look established
+                    </p>
+
+                    <p className="text-sm text-[#1F241C]/60 leading-relaxed">
+                      Give visitors confidence that your business is active,
+                      serious, and professional.
+                    </p>
+                  </div>
+
+                  <div className="rounded-[1.5rem] bg-[#FFFDF8] border border-[#E2D2B8]/50 p-5 transition duration-300 hover:-translate-y-1 hover:shadow-md">
+                    <p className="text-sm font-semibold mb-2">
+                      Build trust faster
+                    </p>
+
+                    <p className="text-sm text-[#1F241C]/60 leading-relaxed">
+                      Show your services, story, work, and contact path without
+                      making people search.
+                    </p>
+                  </div>
+
+                  <div className="rounded-[1.5rem] bg-[#FFFDF8] border border-[#E2D2B8]/50 p-5 transition duration-300 hover:-translate-y-1 hover:shadow-md">
+                    <p className="text-sm font-semibold mb-2">
+                      Get more inquiries
+                    </p>
+
+                    <p className="text-sm text-[#1F241C]/60 leading-relaxed">
+                      Make it easier for customers to call, book, request a
+                      quote, or send a message.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
 
             {/* RIGHT BRAND MOCKUP */}
-            <div className="rounded-[2.5rem] bg-[#EDE6D8] border border-[#E2D2B8]/60 p-5 md:p-6 shadow-[0_20px_60px_rgba(47,61,44,0.08)]">
-              <div className="rounded-[2rem] bg-[#FFFDF8] border border-[#E2D2B8]/50 p-5 md:p-6 h-full">
+            <div className="rounded-[2.5rem] bg-[#EDE6D8] border border-[#E2D2B8]/60 p-5 md:p-6 shadow-[0_20px_60px_rgba(47,61,44,0.08)] animate-fade-up-delay-2 transition duration-500 hover:shadow-2xl">
+              <div className="rounded-[2rem] bg-[#FFFDF8] border border-[#E2D2B8]/50 p-5 md:p-6 h-full premium-shimmer">
                 <div className="flex items-center justify-between border-b border-[#E2D2B8]/50 pb-4 mb-6">
                   <div className="flex items-center gap-2">
                     <span className="w-3 h-3 rounded-full bg-[#D8C5A4]" />
@@ -370,17 +517,17 @@ export default function Home() {
                     </div>
 
                     <div className="grid grid-cols-3 gap-3 mb-5">
-                      <div className="rounded-2xl bg-[#FFFDF8] border border-[#E2D2B8]/50 p-4">
+                      <div className="rounded-2xl bg-[#FFFDF8] border border-[#E2D2B8]/50 p-4 transition duration-300 hover:-translate-y-1">
                         <div className="h-3 w-14 rounded-full bg-[#E2D2B8] mb-3" />
                         <div className="h-8 w-10 rounded-full bg-[#F0E7D6]" />
                       </div>
 
-                      <div className="rounded-2xl bg-[#FFFDF8] border border-[#E2D2B8]/50 p-4">
+                      <div className="rounded-2xl bg-[#FFFDF8] border border-[#E2D2B8]/50 p-4 transition duration-300 hover:-translate-y-1">
                         <div className="h-3 w-16 rounded-full bg-[#E2D2B8] mb-3" />
                         <div className="h-8 w-12 rounded-full bg-[#F0E7D6]" />
                       </div>
 
-                      <div className="rounded-2xl bg-[#FFFDF8] border border-[#E2D2B8]/50 p-4">
+                      <div className="rounded-2xl bg-[#FFFDF8] border border-[#E2D2B8]/50 p-4 transition duration-300 hover:-translate-y-1">
                         <div className="h-3 w-12 rounded-full bg-[#E2D2B8] mb-3" />
                         <div className="h-8 w-9 rounded-full bg-[#F0E7D6]" />
                       </div>
@@ -397,7 +544,7 @@ export default function Home() {
                         </div>
                       </div>
 
-                      <div className="col-span-2 rounded-2xl bg-[#2F3D2C] p-4 flex flex-col justify-between">
+                      <div className="col-span-2 rounded-2xl bg-[#2F3D2C] p-4 flex flex-col justify-between transition duration-300 hover:scale-[1.02]">
                         <div>
                           <div className="h-3 w-16 rounded-full bg-white/30 mb-3" />
                           <div className="h-7 w-20 rounded-full bg-white/85 mb-2" />
@@ -416,19 +563,19 @@ export default function Home() {
                   </p>
 
                   <div className="grid grid-cols-2 gap-3 text-sm text-white/75">
-                    <div className="rounded-2xl bg-white/10 px-4 py-3">
+                    <div className="rounded-2xl bg-white/10 px-4 py-3 transition duration-300 hover:bg-white/15">
                       Stronger first impression
                     </div>
 
-                    <div className="rounded-2xl bg-white/10 px-4 py-3">
+                    <div className="rounded-2xl bg-white/10 px-4 py-3 transition duration-300 hover:bg-white/15">
                       Clear service explanation
                     </div>
 
-                    <div className="rounded-2xl bg-white/10 px-4 py-3">
+                    <div className="rounded-2xl bg-white/10 px-4 py-3 transition duration-300 hover:bg-white/15">
                       Better mobile experience
                     </div>
 
-                    <div className="rounded-2xl bg-white/10 px-4 py-3">
+                    <div className="rounded-2xl bg-white/10 px-4 py-3 transition duration-300 hover:bg-white/15">
                       Real lead capture path
                     </div>
                   </div>
@@ -437,10 +584,10 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="mt-10 flex justify-center">
+          <div className="mt-10 flex justify-center animate-fade-up-delay-3">
             <a
               href="#contact"
-              className="inline-flex items-center justify-center rounded-full bg-[#2F3D2C] px-8 py-4 text-sm text-white transition hover:scale-[1.02] hover:bg-[#1F241C]"
+              className="inline-flex items-center justify-center rounded-full bg-[#2F3D2C] px-8 py-4 text-sm text-white transition duration-300 hover:-translate-y-0.5 hover:scale-[1.02] hover:bg-[#1F241C] hover:shadow-xl"
             >
               Build A Better Website
             </a>
@@ -451,7 +598,7 @@ export default function Home() {
       {/* PROCESS */}
       <section id="process" className="py-24 px-6 bg-[#FFFDF8]">
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16">
-          <div>
+          <div className="animate-fade-up">
             <p className="text-sm tracking-[0.3em] text-[#7A5C3E]/60 mb-4 uppercase">
               Process
             </p>
@@ -462,7 +609,7 @@ export default function Home() {
           </div>
 
           <div className="space-y-8">
-            <div className="border-t border-[#E2D2B8]/60 pt-6 transition duration-300 hover:translate-x-2">
+            <div className="border-t border-[#E2D2B8]/60 pt-6 transition duration-300 hover:translate-x-2 animate-fade-up">
               <p className="text-sm text-[#7A5C3E]/60 mb-2">
                 01 / Strategy
               </p>
@@ -477,7 +624,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="border-t border-[#E2D2B8]/60 pt-6 transition duration-300 hover:translate-x-2">
+            <div className="border-t border-[#E2D2B8]/60 pt-6 transition duration-300 hover:translate-x-2 animate-fade-up-delay-1">
               <p className="text-sm text-[#7A5C3E]/60 mb-2">
                 02 / Build
               </p>
@@ -492,7 +639,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="border-t border-[#E2D2B8]/60 pt-6 transition duration-300 hover:translate-x-2">
+            <div className="border-t border-[#E2D2B8]/60 pt-6 transition duration-300 hover:translate-x-2 animate-fade-up-delay-2">
               <p className="text-sm text-[#7A5C3E]/60 mb-2">
                 03 / Launch
               </p>
@@ -512,7 +659,7 @@ export default function Home() {
 
       {/* PRICING */}
       <section id="pricing" className="py-24 px-6">
-        <div className="max-w-7xl mx-auto mb-16">
+        <div className="max-w-7xl mx-auto mb-16 animate-fade-up">
           <p className="text-sm tracking-[0.3em] text-[#7A5C3E]/60 mb-4 uppercase">
             Pricing
           </p>
@@ -523,7 +670,7 @@ export default function Home() {
         </div>
 
         <div className="grid md:grid-cols-3 gap-6 max-w-7xl mx-auto">
-          <div className="rounded-[2rem] bg-[#F7F4ED] border border-[#E2D2B8]/40 p-8 transition duration-300 hover:-translate-y-2 hover:shadow-xl">
+          <div className="rounded-[2rem] bg-[#F7F4ED] border border-[#E2D2B8]/40 p-8 transition duration-300 hover:-translate-y-2 hover:shadow-xl animate-fade-up">
             <h3 className="text-xl font-semibold mb-4">
               Starter
             </h3>
@@ -544,13 +691,13 @@ export default function Home() {
 
             <a
               href="#contact"
-              className="border border-[#7A5C3E]/40 text-[#7A5C3E] px-6 py-3 rounded-full w-full block text-center transition hover:bg-[#E2D2B8]/30"
+              className="border border-[#7A5C3E]/40 text-[#7A5C3E] px-6 py-3 rounded-full w-full block text-center transition duration-300 hover:-translate-y-0.5 hover:bg-[#E2D2B8]/30"
             >
               Start
             </a>
           </div>
 
-          <div className="rounded-[2rem] bg-[#2F3D2C] text-white p-8 transition duration-300 hover:-translate-y-2 hover:shadow-xl">
+          <div className="rounded-[2rem] bg-[#2F3D2C] text-white p-8 transition duration-300 hover:-translate-y-2 hover:shadow-xl animate-fade-up-delay-1">
             <p className="text-xs tracking-[0.3em] text-white/50 mb-4">
               MOST POPULAR
             </p>
@@ -576,13 +723,13 @@ export default function Home() {
 
             <a
               href="#contact"
-              className="bg-[#F7F4ED] text-[#2F3D2C] px-6 py-3 rounded-full w-full block text-center transition hover:bg-white"
+              className="bg-[#F7F4ED] text-[#2F3D2C] px-6 py-3 rounded-full w-full block text-center transition duration-300 hover:-translate-y-0.5 hover:bg-white"
             >
               Start
             </a>
           </div>
 
-          <div className="rounded-[2rem] bg-[#F7F4ED] border border-[#E2D2B8]/40 p-8 transition duration-300 hover:-translate-y-2 hover:shadow-xl">
+          <div className="rounded-[2rem] bg-[#F7F4ED] border border-[#E2D2B8]/40 p-8 transition duration-300 hover:-translate-y-2 hover:shadow-xl animate-fade-up-delay-2">
             <h3 className="text-xl font-semibold mb-4">
               Premium
             </h3>
@@ -604,7 +751,7 @@ export default function Home() {
 
             <a
               href="#contact"
-              className="border border-[#7A5C3E]/40 text-[#7A5C3E] px-6 py-3 rounded-full w-full block text-center transition hover:bg-[#E2D2B8]/30"
+              className="border border-[#7A5C3E]/40 text-[#7A5C3E] px-6 py-3 rounded-full w-full block text-center transition duration-300 hover:-translate-y-0.5 hover:bg-[#E2D2B8]/30"
             >
               Start
             </a>
@@ -615,7 +762,7 @@ export default function Home() {
       {/* CONTACT */}
       <section id="contact" className="py-28 px-6 bg-[#2F3D2C] text-white">
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16">
-          <div>
+          <div className="animate-fade-up">
             <p className="text-sm tracking-[0.3em] text-white/40 mb-4 uppercase">
               Contact
             </p>
@@ -633,7 +780,7 @@ export default function Home() {
           <form
             action="https://formspree.io/f/xpqbwpbr"
             method="POST"
-            className="space-y-4"
+            className="space-y-4 animate-fade-up-delay-1"
           >
             <input
               type="hidden"
@@ -643,32 +790,32 @@ export default function Home() {
 
             <input
               name="name"
-              className="w-full rounded-2xl bg-[#F7F4ED] text-[#1F241C] px-4 py-4 transition focus:outline-none focus:ring-4 focus:ring-white/20"
+              className="w-full rounded-2xl bg-[#F7F4ED] text-[#1F241C] px-4 py-4 transition duration-300 focus:outline-none focus:ring-4 focus:ring-white/20 focus:scale-[1.01]"
               placeholder="Name"
             />
 
             <input
               type="email"
               name="email"
-              className="w-full rounded-2xl bg-[#F7F4ED] text-[#1F241C] px-4 py-4 transition focus:outline-none focus:ring-4 focus:ring-white/20"
+              className="w-full rounded-2xl bg-[#F7F4ED] text-[#1F241C] px-4 py-4 transition duration-300 focus:outline-none focus:ring-4 focus:ring-white/20 focus:scale-[1.01]"
               placeholder="Email"
             />
 
             <input
               name="business"
-              className="w-full rounded-2xl bg-[#F7F4ED] text-[#1F241C] px-4 py-4 transition focus:outline-none focus:ring-4 focus:ring-white/20"
+              className="w-full rounded-2xl bg-[#F7F4ED] text-[#1F241C] px-4 py-4 transition duration-300 focus:outline-none focus:ring-4 focus:ring-white/20 focus:scale-[1.01]"
               placeholder="Business name"
             />
 
             <textarea
               name="message"
-              className="w-full rounded-2xl bg-[#F7F4ED] text-[#1F241C] px-4 py-4 h-36 transition focus:outline-none focus:ring-4 focus:ring-white/20"
+              className="w-full rounded-2xl bg-[#F7F4ED] text-[#1F241C] px-4 py-4 h-36 transition duration-300 focus:outline-none focus:ring-4 focus:ring-white/20 focus:scale-[1.01]"
               placeholder="What do you need built?"
             />
 
             <button
               type="submit"
-              className="bg-[#E2D2B8] text-[#2F3D2C] px-6 py-4 rounded-full w-full transition hover:scale-[1.02] hover:bg-[#F7F4ED]"
+              className="bg-[#E2D2B8] text-[#2F3D2C] px-6 py-4 rounded-full w-full transition duration-300 hover:-translate-y-0.5 hover:scale-[1.02] hover:bg-[#F7F4ED] hover:shadow-xl"
             >
               Start My Project
             </button>
@@ -688,7 +835,7 @@ export default function Home() {
               <img
                 src="/birch-logo.png"
                 alt="Birch Studio logo"
-                className="h-9 w-9 object-contain"
+                className="h-9 w-9 object-contain transition duration-300 hover:scale-105"
               />
 
               <p className="text-2xl font-semibold">
