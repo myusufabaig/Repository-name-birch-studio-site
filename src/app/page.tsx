@@ -162,19 +162,19 @@ export default function Home() {
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center relative">
           <div className="animate-fade-up">
             <div className="inline-block mb-6 px-4 py-2 rounded-full bg-[#E2D2B8]/35 text-xs tracking-[0.25em] text-[#7A5C3E]">
-              DESIGN-LED • FAST BUILD • LEAD-FOCUSED
+              DESIGN-LED • BRAND-FIRST • BUILT FAST
             </div>
 
             <h1 className="text-5xl md:text-7xl font-semibold leading-tight mb-8 tracking-tight">
               Premium websites
               <br />
-              for more leads.
+              that elevate your brand.
             </h1>
 
             <p className="text-lg text-[#1F241C]/65 mb-10 max-w-xl leading-relaxed">
               Birch Studio designs clean, modern websites that make your
-              business look more trustworthy and make it easier for customers to
-              reach out.
+              business look more credible, feel more established, and give
+              customers a clear path to reach out.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
@@ -203,7 +203,7 @@ export default function Home() {
                 </div>
 
                 <div className="text-xs text-[#7A5C3E]/70">
-                  LEAD READY
+                  READY TO LAUNCH
                 </div>
               </div>
 
@@ -244,7 +244,7 @@ export default function Home() {
                   Polished brand presence
                 </p>
                 <p className="text-sm text-[#1F241C]/55">
-                  Make the business look established online.
+                  Make the business feel established online.
                 </p>
               </div>
 
@@ -253,16 +253,16 @@ export default function Home() {
                   Clear service explanation
                 </p>
                 <p className="text-sm text-[#1F241C]/55">
-                  Help visitors understand what you offer fast.
+                  Help visitors understand your offer fast.
                 </p>
               </div>
 
               <div className="transition duration-300 hover:-translate-y-1">
                 <p className="text-sm font-semibold mb-2">
-                  Lead-ready contact flow
+                  Contact-ready flow
                 </p>
                 <p className="text-sm text-[#1F241C]/55">
-                  Send quote requests directly to your inbox.
+                  Make it simple for customers to reach out.
                 </p>
               </div>
 
@@ -348,7 +348,7 @@ export default function Home() {
             </p>
 
             <h2 className="text-3xl md:text-4xl font-semibold leading-tight">
-              Give your business a better first impression.
+              Give your brand a better first impression.
             </h2>
           </div>
 
@@ -370,28 +370,26 @@ export default function Home() {
             </p>
 
             <h2 className="text-4xl md:text-5xl font-semibold max-w-3xl leading-tight">
-              Make your business easier to trust.
+              Make the business feel established.
             </h2>
 
             <p className="text-lg text-[#1F241C]/60 max-w-2xl mt-6 leading-relaxed">
-              We create a clean online home for your brand — a place to show
-              your services, tell your story, build credibility, and make it
-              easy for customers to reach out.
+              A clean place to show what you do, why it matters, and how
+              customers can reach you.
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-[0.9fr_1.1fr] gap-10 items-stretch">
+          <div className="grid lg:grid-cols-[0.85fr_1.15fr] gap-10 items-stretch">
             {/* LEFT COPY */}
             <div className="rounded-[2.5rem] border border-[#E2D2B8]/50 bg-[#FFFDF8] p-8 md:p-10 shadow-[0_20px_60px_rgba(47,61,44,0.06)] animate-fade-up-delay-1 transition duration-500 hover:shadow-2xl">
-              <div className="grid gap-4 mb-8">
+              <div className="grid gap-4">
                 <div className="rounded-[1.5rem] bg-[#F7F4ED] border border-[#E2D2B8]/50 p-5 transition duration-300 hover:-translate-y-1 hover:shadow-md">
                   <p className="text-xs tracking-[0.22em] uppercase text-[#7A5C3E]/60 mb-3">
                     Show the brand
                   </p>
 
                   <p className="text-sm text-[#1F241C]/70 leading-relaxed">
-                    Give visitors a clear first impression of who you are and
-                    what makes the business credible.
+                    Make the business look polished and credible.
                   </p>
                 </div>
 
@@ -401,77 +399,18 @@ export default function Home() {
                   </p>
 
                   <p className="text-sm text-[#1F241C]/70 leading-relaxed">
-                    Make your services easy to understand without making people
-                    dig for answers.
+                    Make services clear without overloading the visitor.
                   </p>
                 </div>
 
                 <div className="rounded-[1.5rem] bg-[#F7F4ED] border border-[#E2D2B8]/50 p-5 transition duration-300 hover:-translate-y-1 hover:shadow-md">
                   <p className="text-xs tracking-[0.22em] uppercase text-[#7A5C3E]/60 mb-3">
-                    Guide the next step
+                    Guide action
                   </p>
 
                   <p className="text-sm text-[#1F241C]/70 leading-relaxed">
-                    Give visitors a clear path to call, book, request a quote,
-                    or send a message.
+                    Make it easy to call, book, or request a quote.
                   </p>
-                </div>
-
-                <div className="rounded-[1.5rem] bg-[#F7F4ED] border border-[#E2D2B8]/50 p-5 transition duration-300 hover:-translate-y-1 hover:shadow-md">
-                  <p className="text-xs tracking-[0.22em] uppercase text-[#7A5C3E]/60 mb-3">
-                    Support growth
-                  </p>
-
-                  <p className="text-sm text-[#1F241C]/70 leading-relaxed">
-                    Build a site that can be updated as the business grows.
-                  </p>
-                </div>
-              </div>
-
-              <div className="rounded-[2rem] bg-[#F7F4ED] border border-[#E2D2B8]/50 p-6 transition duration-300 hover:shadow-lg">
-                <p className="text-sm tracking-[0.25em] uppercase text-[#7A5C3E]/60 mb-4">
-                  Why it matters
-                </p>
-
-                <p className="text-[#1F241C]/65 leading-relaxed mb-6">
-                  Most customers check a business online before they ever call,
-                  book, or ask for a quote. A better website helps your business
-                  feel more real, more trustworthy, and easier to choose.
-                </p>
-
-                <div className="grid sm:grid-cols-3 gap-4">
-                  <div className="rounded-[1.5rem] bg-[#FFFDF8] border border-[#E2D2B8]/50 p-5 transition duration-300 hover:-translate-y-1 hover:shadow-md">
-                    <p className="text-sm font-semibold mb-2">
-                      Look established
-                    </p>
-
-                    <p className="text-sm text-[#1F241C]/60 leading-relaxed">
-                      Give visitors confidence that your business is active,
-                      serious, and professional.
-                    </p>
-                  </div>
-
-                  <div className="rounded-[1.5rem] bg-[#FFFDF8] border border-[#E2D2B8]/50 p-5 transition duration-300 hover:-translate-y-1 hover:shadow-md">
-                    <p className="text-sm font-semibold mb-2">
-                      Build trust faster
-                    </p>
-
-                    <p className="text-sm text-[#1F241C]/60 leading-relaxed">
-                      Show your services, story, work, and contact path without
-                      making people search.
-                    </p>
-                  </div>
-
-                  <div className="rounded-[1.5rem] bg-[#FFFDF8] border border-[#E2D2B8]/50 p-5 transition duration-300 hover:-translate-y-1 hover:shadow-md">
-                    <p className="text-sm font-semibold mb-2">
-                      Get more inquiries
-                    </p>
-
-                    <p className="text-sm text-[#1F241C]/60 leading-relaxed">
-                      Make it easier for customers to call, book, request a
-                      quote, or send a message.
-                    </p>
-                  </div>
                 </div>
               </div>
             </div>
@@ -559,24 +498,24 @@ export default function Home() {
 
                 <div className="mt-6 rounded-[1.5rem] bg-[#2F3D2C] p-6 text-white">
                   <p className="text-xs tracking-[0.22em] uppercase text-white/45 mb-3">
-                    What the buyer gets
+                    Built around
                   </p>
 
                   <div className="grid grid-cols-2 gap-3 text-sm text-white/75">
                     <div className="rounded-2xl bg-white/10 px-4 py-3 transition duration-300 hover:bg-white/15">
-                      Stronger first impression
+                      First impression
                     </div>
 
                     <div className="rounded-2xl bg-white/10 px-4 py-3 transition duration-300 hover:bg-white/15">
-                      Clear service explanation
+                      Clear services
                     </div>
 
                     <div className="rounded-2xl bg-white/10 px-4 py-3 transition duration-300 hover:bg-white/15">
-                      Better mobile experience
+                      Mobile experience
                     </div>
 
                     <div className="rounded-2xl bg-white/10 px-4 py-3 transition duration-300 hover:bg-white/15">
-                      Real lead capture path
+                      Contact path
                     </div>
                   </div>
                 </div>
@@ -876,10 +815,6 @@ export default function Home() {
 
               <p>
                 Remote projects available
-              </p>
-
-              <p>
-                Typical response: within 24 hours
               </p>
             </div>
           </div>
