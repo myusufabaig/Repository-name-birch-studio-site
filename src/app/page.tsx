@@ -657,6 +657,87 @@ export default function Home() {
         </div>
       </section>
 
+      {/* WHO WE HELP + WHAT'S INCLUDED */}
+      <section className="py-24 px-6 bg-[#F7F4ED]">
+        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-10">
+          <div className="rounded-[2.5rem] bg-[#FFFDF8] border border-[#E2D2B8]/50 p-8 md:p-10 animate-fade-up transition duration-500 hover:shadow-xl">
+            <p className="text-sm tracking-[0.3em] text-[#7A5C3E]/60 mb-4 uppercase">
+              Who We Help
+            </p>
+
+            <h2 className="text-4xl md:text-5xl font-semibold leading-tight mb-6">
+              Built for growing businesses.
+            </h2>
+
+            <p className="text-[#1F241C]/65 leading-relaxed mb-8">
+              Birch Studio is built for local service businesses, coaches,
+              contractors, real estate teams, home service companies, and
+              founders who need to look more credible online.
+            </p>
+
+            <div className="grid sm:grid-cols-2 gap-3">
+              <div className="rounded-2xl bg-[#F7F4ED] border border-[#E2D2B8]/50 px-4 py-3 text-sm text-[#1F241C]/70">
+                Coaches and consultants
+              </div>
+
+              <div className="rounded-2xl bg-[#F7F4ED] border border-[#E2D2B8]/50 px-4 py-3 text-sm text-[#1F241C]/70">
+                Contractors and trades
+              </div>
+
+              <div className="rounded-2xl bg-[#F7F4ED] border border-[#E2D2B8]/50 px-4 py-3 text-sm text-[#1F241C]/70">
+                Local service businesses
+              </div>
+
+              <div className="rounded-2xl bg-[#F7F4ED] border border-[#E2D2B8]/50 px-4 py-3 text-sm text-[#1F241C]/70">
+                Founders and small brands
+              </div>
+            </div>
+          </div>
+
+          <div className="rounded-[2.5rem] bg-[#2F3D2C] text-white p-8 md:p-10 animate-fade-up-delay-1 transition duration-500 hover:shadow-xl">
+            <p className="text-sm tracking-[0.3em] text-white/40 mb-4 uppercase">
+              What’s Included
+            </p>
+
+            <h2 className="text-4xl md:text-5xl font-semibold leading-tight mb-6">
+              Everything needed to launch.
+            </h2>
+
+            <p className="text-white/65 leading-relaxed mb-8">
+              Every build is designed to give your business a stronger first
+              impression, a clearer offer, and a working path for customer
+              inquiries.
+            </p>
+
+            <div className="grid sm:grid-cols-2 gap-3">
+              <div className="rounded-2xl bg-white/10 px-4 py-3 text-sm text-white/75">
+                Custom homepage
+              </div>
+
+              <div className="rounded-2xl bg-white/10 px-4 py-3 text-sm text-white/75">
+                Mobile responsive design
+              </div>
+
+              <div className="rounded-2xl bg-white/10 px-4 py-3 text-sm text-white/75">
+                Contact form to inbox
+              </div>
+
+              <div className="rounded-2xl bg-white/10 px-4 py-3 text-sm text-white/75">
+                Basic SEO setup
+              </div>
+
+              <div className="rounded-2xl bg-white/10 px-4 py-3 text-sm text-white/75">
+                Launch support
+              </div>
+
+              <div className="rounded-2xl bg-white/10 px-4 py-3 text-sm text-white/75">
+                Post-launch edits available
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* PRICING */}
       <section id="pricing" className="py-24 px-6">
         <div className="max-w-7xl mx-auto mb-16 animate-fade-up">
@@ -671,6 +752,10 @@ export default function Home() {
 
         <div className="grid md:grid-cols-3 gap-6 max-w-7xl mx-auto">
           <div className="rounded-[2rem] bg-[#F7F4ED] border border-[#E2D2B8]/40 p-8 transition duration-300 hover:-translate-y-2 hover:shadow-xl animate-fade-up">
+            <p className="text-xs tracking-[0.25em] uppercase text-[#7A5C3E]/60 mb-4">
+              Best for simple launches
+            </p>
+
             <h3 className="text-xl font-semibold mb-4">
               Starter
             </h3>
@@ -702,6 +787,10 @@ export default function Home() {
               MOST POPULAR
             </p>
 
+            <p className="text-xs tracking-[0.25em] uppercase text-white/45 mb-4">
+              Best for service businesses
+            </p>
+
             <h3 className="text-xl font-semibold mb-4">
               Business
             </h3>
@@ -730,6 +819,10 @@ export default function Home() {
           </div>
 
           <div className="rounded-[2rem] bg-[#F7F4ED] border border-[#E2D2B8]/40 p-8 transition duration-300 hover:-translate-y-2 hover:shadow-xl animate-fade-up-delay-2">
+            <p className="text-xs tracking-[0.25em] uppercase text-[#7A5C3E]/60 mb-4">
+              Best for custom brands
+            </p>
+
             <h3 className="text-xl font-semibold mb-4">
               Premium
             </h3>
@@ -771,10 +864,24 @@ export default function Home() {
               Tell us about your project.
             </h2>
 
-            <p className="text-white/65 max-w-lg leading-relaxed">
+            <p className="text-white/65 max-w-lg leading-relaxed mb-8">
               We’ll respond with next steps and help you decide the right build
               for your business.
             </p>
+
+            <div className="grid gap-3 text-sm text-white/55">
+              <p>
+                Based in Atlanta, GA
+              </p>
+
+              <p>
+                Remote projects available
+              </p>
+
+              <p>
+                Typical response: within 24 hours
+              </p>
+            </div>
           </div>
 
           <form
