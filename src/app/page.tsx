@@ -358,191 +358,116 @@ export default function Home() {
       </section>
 
       {/* PROCESS */}
-      <section id="process" className="py-32 px-6">
-        <div className="max-w-7xl mx-auto grid md:grid-cols-[0.95fr_1.05fr] gap-16 items-start">
-          {/* LEFT SIDE */}
-          <div className="animate-fade-up">
+      <section id="process" className="py-32 px-6 bg-[#FFFDF8]">
+        <div className="max-w-7xl mx-auto">
+          <div className="mb-20 animate-fade-up">
             <p className="text-sm tracking-[0.3em] text-[#A48F78] mb-6 uppercase">
               Process
             </p>
 
-            <h2 className="text-5xl md:text-6xl font-semibold tracking-tight text-[#1F241C] mb-10">
+            <h2 className="text-5xl md:text-6xl font-semibold tracking-tight text-[#1F241C]">
               How it works.
             </h2>
-
-            <div className="relative rounded-[2rem] bg-[#F3EFE7] border border-[#E2D2B8]/50 p-6 md:p-8 shadow-[0_20px_60px_rgba(31,36,28,0.06)] overflow-hidden transition duration-500 hover:shadow-xl">
-              <div className="mb-6">
-                <p className="text-sm uppercase tracking-[0.28em] text-[#A48F78] mb-3">
-                  Birch Method
-                </p>
-
-                <p className="text-[#1F241C]/65 max-w-md leading-relaxed">
-                  A simple three-step process: clarify the offer, build with
-                  care, and launch with a clear path for inquiries.
-                </p>
-              </div>
-
-              <div className="relative h-[420px] md:h-[460px]">
-                <svg
-                  viewBox="0 0 520 460"
-                  className="absolute inset-0 h-full w-full"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <defs>
-                    <linearGradient
-                      id="branchStroke"
-                      x1="40"
-                      y1="230"
-                      x2="500"
-                      y2="230"
-                      gradientUnits="userSpaceOnUse"
-                    >
-                      <stop stopColor="#8A6A4B" />
-                      <stop offset="1" stopColor="#6F7F63" />
-                    </linearGradient>
-
-                    <linearGradient id="trunkFill" x1="0" y1="0" x2="0" y2="1">
-                      <stop offset="0%" stopColor="#D9CCB4" />
-                      <stop offset="100%" stopColor="#C9B89D" />
-                    </linearGradient>
-                  </defs>
-
-                  <ellipse cx="110" cy="402" rx="85" ry="24" fill="#E7DDCD" />
-
-                  <path
-                    d="M88 385 
-                       C95 350, 100 320, 103 285
-                       C106 248, 108 215, 108 180
-                       C108 150, 106 125, 100 92
-                       C98 80, 104 70, 117 68
-                       C130 66, 139 74, 140 88
-                       C142 115, 145 140, 149 166
-                       C153 194, 158 223, 162 258
-                       C166 291, 170 330, 173 385
-                       Z"
-                    fill="url(#trunkFill)"
-                    stroke="#8A6A4B"
-                    strokeWidth="4"
-                  />
-
-                  <path d="M101 108 L123 104" stroke="#8A6A4B" strokeWidth="3" strokeLinecap="round" opacity="0.5" />
-                  <path d="M99 142 L126 138" stroke="#8A6A4B" strokeWidth="3" strokeLinecap="round" opacity="0.5" />
-                  <path d="M108 177 L135 173" stroke="#8A6A4B" strokeWidth="3" strokeLinecap="round" opacity="0.5" />
-                  <path d="M112 214 L141 210" stroke="#8A6A4B" strokeWidth="3" strokeLinecap="round" opacity="0.5" />
-                  <path d="M119 252 L148 248" stroke="#8A6A4B" strokeWidth="3" strokeLinecap="round" opacity="0.5" />
-                  <path d="M124 292 L154 288" stroke="#8A6A4B" strokeWidth="3" strokeLinecap="round" opacity="0.5" />
-
-                  <path
-                    d="M142 122 C180 110, 215 98, 250 92 C305 83, 362 88, 450 96"
-                    stroke="url(#branchStroke)"
-                    strokeWidth="6"
-                    strokeLinecap="round"
-                  />
-
-                  <path
-                    d="M153 194 C205 192, 245 188, 288 190 C350 193, 397 196, 455 202"
-                    stroke="url(#branchStroke)"
-                    strokeWidth="6"
-                    strokeLinecap="round"
-                  />
-
-                  <path
-                    d="M166 274 C206 288, 248 304, 285 323 C336 348, 385 364, 448 372"
-                    stroke="url(#branchStroke)"
-                    strokeWidth="6"
-                    strokeLinecap="round"
-                  />
-
-                  <path
-                    d="M255 92 C245 76, 238 67, 226 58"
-                    stroke="#8A6A4B"
-                    strokeWidth="4"
-                    strokeLinecap="round"
-                    opacity="0.8"
-                  />
-
-                  <path
-                    d="M305 190 C296 174, 288 166, 275 157"
-                    stroke="#8A6A4B"
-                    strokeWidth="4"
-                    strokeLinecap="round"
-                    opacity="0.8"
-                  />
-
-                  <path
-                    d="M300 323 C292 336, 286 347, 275 359"
-                    stroke="#8A6A4B"
-                    strokeWidth="4"
-                    strokeLinecap="round"
-                    opacity="0.8"
-                  />
-
-                  <circle cx="458" cy="96" r="28" fill="#FFFDF8" stroke="#E2D2B8" strokeWidth="2" />
-                  <circle cx="458" cy="202" r="28" fill="#FFFDF8" stroke="#E2D2B8" strokeWidth="2" />
-                  <circle cx="458" cy="372" r="28" fill="#FFFDF8" stroke="#E2D2B8" strokeWidth="2" />
-
-                  <text x="458" y="102" textAnchor="middle" fontSize="16" fontWeight="600" fill="#1F241C">
-                    01
-                  </text>
-
-                  <text x="458" y="208" textAnchor="middle" fontSize="16" fontWeight="600" fill="#1F241C">
-                    02
-                  </text>
-
-                  <text x="458" y="378" textAnchor="middle" fontSize="16" fontWeight="600" fill="#1F241C">
-                    03
-                  </text>
-                </svg>
-              </div>
-            </div>
           </div>
 
-          {/* RIGHT SIDE */}
-          <div className="space-y-0 animate-fade-up-delay-1">
-            <div className="border-t border-[#E2D2B8]/80 py-10 transition duration-300 hover:translate-x-2">
-              <p className="text-sm text-[#A48F78] mb-3">
-                01 / Strategy
+          <div className="grid lg:grid-cols-[0.75fr_1.25fr] gap-16 items-stretch">
+            {/* LEFT VISUAL */}
+            <div className="rounded-[2.5rem] bg-[#F3EFE7] border border-[#E2D2B8]/50 p-10 md:p-12 shadow-[0_20px_60px_rgba(31,36,28,0.06)] animate-fade-up-delay-1 transition duration-500 hover:shadow-xl">
+              <p className="text-sm uppercase tracking-[0.28em] text-[#A48F78] mb-6">
+                Birch Method
               </p>
 
-              <h3 className="text-2xl md:text-3xl font-semibold mb-4 text-[#1F241C]">
-                Clarify the Offer
-              </h3>
+              <div className="h-px w-full bg-[#E2D2B8]/70 mb-10" />
 
-              <p className="text-lg text-[#1F241C]/58 max-w-2xl leading-relaxed">
-                We define what your business needs to communicate and what
-                action the website should drive.
-              </p>
+              <div className="relative min-h-[420px]">
+                <div className="absolute left-8 top-4 bottom-4 w-px bg-[#8A6A4B]/40" />
+
+                <div className="relative flex items-center gap-6 mb-24">
+                  <div className="relative z-10 h-16 w-16 rounded-full bg-[#FFFDF8] border border-[#D9C8AA] flex items-center justify-center text-sm font-semibold text-[#1F241C] shadow-sm">
+                    01
+                  </div>
+
+                  <div className="h-px flex-1 bg-[#8A6A4B]/25" />
+
+                  <p className="text-sm uppercase tracking-[0.22em] text-[#7A5C3E]/70">
+                    Strategy
+                  </p>
+                </div>
+
+                <div className="relative flex items-center gap-6 mb-24">
+                  <div className="relative z-10 h-16 w-16 rounded-full bg-[#FFFDF8] border border-[#D9C8AA] flex items-center justify-center text-sm font-semibold text-[#1F241C] shadow-sm">
+                    02
+                  </div>
+
+                  <div className="h-px flex-1 bg-[#8A6A4B]/25" />
+
+                  <p className="text-sm uppercase tracking-[0.22em] text-[#7A5C3E]/70">
+                    Build
+                  </p>
+                </div>
+
+                <div className="relative flex items-center gap-6">
+                  <div className="relative z-10 h-16 w-16 rounded-full bg-[#FFFDF8] border border-[#D9C8AA] flex items-center justify-center text-sm font-semibold text-[#1F241C] shadow-sm">
+                    03
+                  </div>
+
+                  <div className="h-px flex-1 bg-[#8A6A4B]/25" />
+
+                  <p className="text-sm uppercase tracking-[0.22em] text-[#7A5C3E]/70">
+                    Launch
+                  </p>
+                </div>
+              </div>
             </div>
 
-            <div className="border-t border-[#E2D2B8]/80 py-10 transition duration-300 hover:translate-x-2">
-              <p className="text-sm text-[#A48F78] mb-3">
-                02 / Build
-              </p>
+            {/* RIGHT STEPS */}
+            <div className="rounded-[2.5rem] bg-[#F7F4ED] border border-[#E2D2B8]/50 p-8 md:p-10 animate-fade-up-delay-2 transition duration-500 hover:shadow-xl">
+              <div className="divide-y divide-[#E2D2B8]/70">
+                <div className="py-8 first:pt-0 transition duration-300 hover:translate-x-2">
+                  <p className="text-sm text-[#A48F78] mb-3">
+                    01 / Strategy
+                  </p>
 
-              <h3 className="text-2xl md:text-3xl font-semibold mb-4 text-[#1F241C]">
-                Design With Taste
-              </h3>
+                  <h3 className="text-2xl md:text-3xl font-semibold mb-4 text-[#1F241C]">
+                    Clarify the Offer
+                  </h3>
 
-              <p className="text-lg text-[#1F241C]/58 max-w-2xl leading-relaxed">
-                We build a clean, mobile-ready site that makes the business feel
-                more credible and easier to trust.
-              </p>
-            </div>
+                  <p className="text-lg text-[#1F241C]/58 max-w-2xl leading-relaxed">
+                    We define what your business needs to communicate and what
+                    action the website should drive.
+                  </p>
+                </div>
 
-            <div className="border-t border-[#E2D2B8]/80 py-10 transition duration-300 hover:translate-x-2">
-              <p className="text-sm text-[#A48F78] mb-3">
-                03 / Launch
-              </p>
+                <div className="py-8 transition duration-300 hover:translate-x-2">
+                  <p className="text-sm text-[#A48F78] mb-3">
+                    02 / Build
+                  </p>
 
-              <h3 className="text-2xl md:text-3xl font-semibold mb-4 text-[#1F241C]">
-                Go Live and Improve
-              </h3>
+                  <h3 className="text-2xl md:text-3xl font-semibold mb-4 text-[#1F241C]">
+                    Design With Taste
+                  </h3>
 
-              <p className="text-lg text-[#1F241C]/58 max-w-2xl leading-relaxed">
-                We launch the site, connect the lead flow, and support future
-                updates as the business grows.
-              </p>
+                  <p className="text-lg text-[#1F241C]/58 max-w-2xl leading-relaxed">
+                    We build a clean, mobile-ready site that makes the business
+                    feel more credible and easier to trust.
+                  </p>
+                </div>
+
+                <div className="py-8 last:pb-0 transition duration-300 hover:translate-x-2">
+                  <p className="text-sm text-[#A48F78] mb-3">
+                    03 / Launch
+                  </p>
+
+                  <h3 className="text-2xl md:text-3xl font-semibold mb-4 text-[#1F241C]">
+                    Go Live and Improve
+                  </h3>
+
+                  <p className="text-lg text-[#1F241C]/58 max-w-2xl leading-relaxed">
+                    We launch the site, connect the lead flow, and support
+                    future updates as the business grows.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
