@@ -119,7 +119,7 @@ export default function Home() {
             <img
               src="/birch-logo.png"
               alt="Birch Studio logo"
-              className="h-9 w-9 object-contain transition duration-300 hover:rotate-[2deg]"
+              className="h-12 w-8 object-contain transition duration-300 hover:rotate-[2deg]"
             />
 
             <span className="text-2xl md:text-3xl font-semibold tracking-tight">
@@ -835,7 +835,7 @@ export default function Home() {
               <img
                 src="/birch-logo.png"
                 alt="Birch Studio logo"
-                className="h-9 w-9 object-contain transition duration-300 hover:scale-105"
+                className="h-12 w-8 object-contain transition duration-300 hover:scale-105"
               />
 
               <p className="text-2xl font-semibold">
