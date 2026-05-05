@@ -237,7 +237,7 @@ export default function Home() {
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
               <div className="transition duration-300 hover:-translate-y-1">
                 <p className="text-sm font-semibold mb-2">
-                  Polished brand presence
+                  Polished Brand Presence
                 </p>
                 <p className="text-sm text-[#1F241C]/55">
                   Make the business feel established online.
@@ -246,7 +246,7 @@ export default function Home() {
 
               <div className="transition duration-300 hover:-translate-y-1">
                 <p className="text-sm font-semibold mb-2">
-                  Clear service explanation
+                  Clear Service Explanation
                 </p>
                 <p className="text-sm text-[#1F241C]/55">
                   Help visitors understand your offer fast.
@@ -255,7 +255,7 @@ export default function Home() {
 
               <div className="transition duration-300 hover:-translate-y-1">
                 <p className="text-sm font-semibold mb-2">
-                  Contact-ready flow
+                  Contact-Ready Flow
                 </p>
                 <p className="text-sm text-[#1F241C]/55">
                   Make it simple for customers to reach out.
@@ -264,7 +264,7 @@ export default function Home() {
 
               <div className="transition duration-300 hover:-translate-y-1">
                 <p className="text-sm font-semibold mb-2">
-                  Mobile-ready build
+                  Mobile-Ready Build
                 </p>
                 <p className="text-sm text-[#1F241C]/55">
                   Built for the way customers browse now.
@@ -358,61 +358,190 @@ export default function Home() {
       </section>
 
       {/* PROCESS */}
-      <section id="process" className="py-24 px-6 bg-[#FFFDF8]">
-        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16">
+      <section id="process" className="py-32 px-6">
+        <div className="max-w-7xl mx-auto grid md:grid-cols-[0.95fr_1.05fr] gap-16 items-start">
+          {/* LEFT SIDE */}
           <div className="animate-fade-up">
-            <p className="text-sm tracking-[0.3em] text-[#7A5C3E]/60 mb-4 uppercase">
+            <p className="text-sm tracking-[0.3em] text-[#A48F78] mb-6 uppercase">
               Process
             </p>
 
-            <h2 className="text-4xl md:text-5xl font-semibold leading-tight">
+            <h2 className="text-5xl md:text-6xl font-semibold tracking-tight text-[#1F241C] mb-10">
               How it works.
             </h2>
+
+            <div className="relative rounded-[2rem] bg-[#F3EFE7] border border-[#E2D2B8]/50 p-6 md:p-8 shadow-[0_20px_60px_rgba(31,36,28,0.06)] overflow-hidden transition duration-500 hover:shadow-xl">
+              <div className="mb-6">
+                <p className="text-sm uppercase tracking-[0.28em] text-[#A48F78] mb-3">
+                  Birch Method
+                </p>
+
+                <p className="text-[#1F241C]/65 max-w-md leading-relaxed">
+                  A simple three-step process: clarify the offer, build with
+                  care, and launch with a clear path for inquiries.
+                </p>
+              </div>
+
+              <div className="relative h-[420px] md:h-[460px]">
+                <svg
+                  viewBox="0 0 520 460"
+                  className="absolute inset-0 h-full w-full"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <defs>
+                    <linearGradient
+                      id="branchStroke"
+                      x1="40"
+                      y1="230"
+                      x2="500"
+                      y2="230"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stopColor="#8A6A4B" />
+                      <stop offset="1" stopColor="#6F7F63" />
+                    </linearGradient>
+
+                    <linearGradient id="trunkFill" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="0%" stopColor="#D9CCB4" />
+                      <stop offset="100%" stopColor="#C9B89D" />
+                    </linearGradient>
+                  </defs>
+
+                  <ellipse cx="110" cy="402" rx="85" ry="24" fill="#E7DDCD" />
+
+                  <path
+                    d="M88 385 
+                       C95 350, 100 320, 103 285
+                       C106 248, 108 215, 108 180
+                       C108 150, 106 125, 100 92
+                       C98 80, 104 70, 117 68
+                       C130 66, 139 74, 140 88
+                       C142 115, 145 140, 149 166
+                       C153 194, 158 223, 162 258
+                       C166 291, 170 330, 173 385
+                       Z"
+                    fill="url(#trunkFill)"
+                    stroke="#8A6A4B"
+                    strokeWidth="4"
+                  />
+
+                  <path d="M101 108 L123 104" stroke="#8A6A4B" strokeWidth="3" strokeLinecap="round" opacity="0.5" />
+                  <path d="M99 142 L126 138" stroke="#8A6A4B" strokeWidth="3" strokeLinecap="round" opacity="0.5" />
+                  <path d="M108 177 L135 173" stroke="#8A6A4B" strokeWidth="3" strokeLinecap="round" opacity="0.5" />
+                  <path d="M112 214 L141 210" stroke="#8A6A4B" strokeWidth="3" strokeLinecap="round" opacity="0.5" />
+                  <path d="M119 252 L148 248" stroke="#8A6A4B" strokeWidth="3" strokeLinecap="round" opacity="0.5" />
+                  <path d="M124 292 L154 288" stroke="#8A6A4B" strokeWidth="3" strokeLinecap="round" opacity="0.5" />
+
+                  <path
+                    d="M142 122 C180 110, 215 98, 250 92 C305 83, 362 88, 450 96"
+                    stroke="url(#branchStroke)"
+                    strokeWidth="6"
+                    strokeLinecap="round"
+                  />
+
+                  <path
+                    d="M153 194 C205 192, 245 188, 288 190 C350 193, 397 196, 455 202"
+                    stroke="url(#branchStroke)"
+                    strokeWidth="6"
+                    strokeLinecap="round"
+                  />
+
+                  <path
+                    d="M166 274 C206 288, 248 304, 285 323 C336 348, 385 364, 448 372"
+                    stroke="url(#branchStroke)"
+                    strokeWidth="6"
+                    strokeLinecap="round"
+                  />
+
+                  <path
+                    d="M255 92 C245 76, 238 67, 226 58"
+                    stroke="#8A6A4B"
+                    strokeWidth="4"
+                    strokeLinecap="round"
+                    opacity="0.8"
+                  />
+
+                  <path
+                    d="M305 190 C296 174, 288 166, 275 157"
+                    stroke="#8A6A4B"
+                    strokeWidth="4"
+                    strokeLinecap="round"
+                    opacity="0.8"
+                  />
+
+                  <path
+                    d="M300 323 C292 336, 286 347, 275 359"
+                    stroke="#8A6A4B"
+                    strokeWidth="4"
+                    strokeLinecap="round"
+                    opacity="0.8"
+                  />
+
+                  <circle cx="458" cy="96" r="28" fill="#FFFDF8" stroke="#E2D2B8" strokeWidth="2" />
+                  <circle cx="458" cy="202" r="28" fill="#FFFDF8" stroke="#E2D2B8" strokeWidth="2" />
+                  <circle cx="458" cy="372" r="28" fill="#FFFDF8" stroke="#E2D2B8" strokeWidth="2" />
+
+                  <text x="458" y="102" textAnchor="middle" fontSize="16" fontWeight="600" fill="#1F241C">
+                    01
+                  </text>
+
+                  <text x="458" y="208" textAnchor="middle" fontSize="16" fontWeight="600" fill="#1F241C">
+                    02
+                  </text>
+
+                  <text x="458" y="378" textAnchor="middle" fontSize="16" fontWeight="600" fill="#1F241C">
+                    03
+                  </text>
+                </svg>
+              </div>
+            </div>
           </div>
 
-          <div className="space-y-8">
-            <div className="border-t border-[#E2D2B8]/60 pt-6 transition duration-300 hover:translate-x-2 animate-fade-up">
-              <p className="text-sm text-[#7A5C3E]/60 mb-2">
+          {/* RIGHT SIDE */}
+          <div className="space-y-0 animate-fade-up-delay-1">
+            <div className="border-t border-[#E2D2B8]/80 py-10 transition duration-300 hover:translate-x-2">
+              <p className="text-sm text-[#A48F78] mb-3">
                 01 / Strategy
               </p>
 
-              <h3 className="text-xl font-semibold mb-2">
-                Clarify the offer
+              <h3 className="text-2xl md:text-3xl font-semibold mb-4 text-[#1F241C]">
+                Clarify the Offer
               </h3>
 
-              <p className="text-[#1F241C]/60 leading-relaxed">
+              <p className="text-lg text-[#1F241C]/58 max-w-2xl leading-relaxed">
                 We define what your business needs to communicate and what
                 action the website should drive.
               </p>
             </div>
 
-            <div className="border-t border-[#E2D2B8]/60 pt-6 transition duration-300 hover:translate-x-2 animate-fade-up-delay-1">
-              <p className="text-sm text-[#7A5C3E]/60 mb-2">
+            <div className="border-t border-[#E2D2B8]/80 py-10 transition duration-300 hover:translate-x-2">
+              <p className="text-sm text-[#A48F78] mb-3">
                 02 / Build
               </p>
 
-              <h3 className="text-xl font-semibold mb-2">
-                Design with taste
+              <h3 className="text-2xl md:text-3xl font-semibold mb-4 text-[#1F241C]">
+                Design With Taste
               </h3>
 
-              <p className="text-[#1F241C]/60 leading-relaxed">
+              <p className="text-lg text-[#1F241C]/58 max-w-2xl leading-relaxed">
                 We build a clean, mobile-ready site that makes the business feel
-                more credible.
+                more credible and easier to trust.
               </p>
             </div>
 
-            <div className="border-t border-[#E2D2B8]/60 pt-6 transition duration-300 hover:translate-x-2 animate-fade-up-delay-2">
-              <p className="text-sm text-[#7A5C3E]/60 mb-2">
+            <div className="border-t border-[#E2D2B8]/80 py-10 transition duration-300 hover:translate-x-2">
+              <p className="text-sm text-[#A48F78] mb-3">
                 03 / Launch
               </p>
 
-              <h3 className="text-xl font-semibold mb-2">
-                Go live and improve
+              <h3 className="text-2xl md:text-3xl font-semibold mb-4 text-[#1F241C]">
+                Go Live and Improve
               </h3>
 
-              <p className="text-[#1F241C]/60 leading-relaxed">
+              <p className="text-lg text-[#1F241C]/58 max-w-2xl leading-relaxed">
                 We launch the site, connect the lead flow, and support future
-                updates.
+                updates as the business grows.
               </p>
             </div>
           </div>
@@ -441,19 +570,19 @@ export default function Home() {
 
             <div className="grid sm:grid-cols-2 gap-4 mt-auto">
               <div className="rounded-[1.25rem] border border-[#E2D2B8]/50 bg-[#F7F4ED] px-5 py-5 text-[#1F241C]/70 text-lg transition duration-300 hover:-translate-y-1 hover:shadow-md hover:bg-[#FFFDF8]">
-                Coaches and consultants
+                Coaches and Consultants
               </div>
 
               <div className="rounded-[1.25rem] border border-[#E2D2B8]/50 bg-[#F7F4ED] px-5 py-5 text-[#1F241C]/70 text-lg transition duration-300 hover:-translate-y-1 hover:shadow-md hover:bg-[#FFFDF8]">
-                Contractors and trades
+                Contractors and Trades
               </div>
 
               <div className="rounded-[1.25rem] border border-[#E2D2B8]/50 bg-[#F7F4ED] px-5 py-5 text-[#1F241C]/70 text-lg transition duration-300 hover:-translate-y-1 hover:shadow-md hover:bg-[#FFFDF8]">
-                Local service businesses
+                Local Service Businesses
               </div>
 
               <div className="rounded-[1.25rem] border border-[#E2D2B8]/50 bg-[#F7F4ED] px-5 py-5 text-[#1F241C]/70 text-lg transition duration-300 hover:-translate-y-1 hover:shadow-md hover:bg-[#FFFDF8]">
-                Founders and small brands
+                Founders and Small Brands
               </div>
             </div>
           </div>
@@ -477,27 +606,27 @@ export default function Home() {
 
             <div className="grid sm:grid-cols-2 gap-4 mt-auto">
               <div className="rounded-[1.25rem] bg-white/10 border border-white/5 px-5 py-5 text-white/90 text-lg transition duration-300 hover:-translate-y-1 hover:bg-white/15">
-                Custom homepage
+                Custom Homepage
               </div>
 
               <div className="rounded-[1.25rem] bg-white/10 border border-white/5 px-5 py-5 text-white/90 text-lg transition duration-300 hover:-translate-y-1 hover:bg-white/15">
-                Mobile responsive design
+                Mobile Responsive Design
               </div>
 
               <div className="rounded-[1.25rem] bg-white/10 border border-white/5 px-5 py-5 text-white/90 text-lg transition duration-300 hover:-translate-y-1 hover:bg-white/15">
-                Contact form to inbox
+                Contact Form to Inbox
               </div>
 
               <div className="rounded-[1.25rem] bg-white/10 border border-white/5 px-5 py-5 text-white/90 text-lg transition duration-300 hover:-translate-y-1 hover:bg-white/15">
-                Basic SEO setup
+                Basic SEO Setup
               </div>
 
               <div className="rounded-[1.25rem] bg-white/10 border border-white/5 px-5 py-5 text-white/90 text-lg transition duration-300 hover:-translate-y-1 hover:bg-white/15">
-                Launch support
+                Launch Support
               </div>
 
               <div className="rounded-[1.25rem] bg-white/10 border border-white/5 px-5 py-5 text-white/90 text-lg transition duration-300 hover:-translate-y-1 hover:bg-white/15">
-                Post-launch edits available
+                Post-Launch Edits Available
               </div>
             </div>
           </div>
@@ -537,9 +666,9 @@ export default function Home() {
             </p>
 
             <ul className="space-y-3 text-[#1F241C]/60 mb-10">
-              <li>• One-page website</li>
-              <li>• Mobile responsive</li>
-              <li>• Basic contact section</li>
+              <li>• One-Page Website</li>
+              <li>• Mobile Responsive</li>
+              <li>• Basic Contact Section</li>
             </ul>
 
             <div className="mt-auto">
@@ -576,10 +705,10 @@ export default function Home() {
             </p>
 
             <ul className="space-y-3 text-white/85 mb-10">
-              <li>• Multi-section site</li>
-              <li>• Custom design direction</li>
-              <li>• SEO-ready structure</li>
-              <li>• Launch support</li>
+              <li>• Multi-Section Site</li>
+              <li>• Custom Design Direction</li>
+              <li>• SEO-Ready Structure</li>
+              <li>• Launch Support</li>
             </ul>
 
             <div className="mt-auto">
@@ -612,10 +741,10 @@ export default function Home() {
             </p>
 
             <ul className="space-y-3 text-[#1F241C]/60 mb-10">
-              <li>• Custom features</li>
-              <li>• Branding refinement</li>
-              <li>• Priority delivery</li>
-              <li>• Ongoing support</li>
+              <li>• Custom Features</li>
+              <li>• Branding Refinement</li>
+              <li>• Priority Delivery</li>
+              <li>• Ongoing Support</li>
             </ul>
 
             <div className="mt-auto">
