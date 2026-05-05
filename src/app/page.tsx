@@ -132,10 +132,6 @@ export default function Home() {
               Services
             </a>
 
-            <a href="#brand" className="hover:text-[#2F3D2C] transition">
-              Brand
-            </a>
-
             <a href="#pricing" className="hover:text-[#2F3D2C] transition">
               Pricing
             </a>
@@ -361,179 +357,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* BRAND */}
-      <section id="brand" className="py-28 px-6 bg-[#F7F4ED]">
-        <div className="max-w-7xl mx-auto">
-          <div className="mb-14 animate-fade-up">
-            <p className="text-sm tracking-[0.3em] text-[#7A5C3E]/60 mb-4 uppercase">
-              Brand Showcase
-            </p>
-
-            <h2 className="text-4xl md:text-5xl font-semibold max-w-3xl leading-tight">
-              Make the business feel established.
-            </h2>
-
-            <p className="text-lg text-[#1F241C]/60 max-w-2xl mt-6 leading-relaxed">
-              A clean place to show what you do, why it matters, and how
-              customers can reach you.
-            </p>
-          </div>
-
-          <div className="grid lg:grid-cols-[0.85fr_1.15fr] gap-10 items-stretch">
-            {/* LEFT COPY */}
-            <div className="rounded-[2.5rem] border border-[#E2D2B8]/50 bg-[#FFFDF8] p-8 md:p-10 shadow-[0_20px_60px_rgba(47,61,44,0.06)] animate-fade-up-delay-1 transition duration-500 hover:shadow-2xl">
-              <div className="grid gap-4">
-                <div className="rounded-[1.5rem] bg-[#F7F4ED] border border-[#E2D2B8]/50 p-5 transition duration-300 hover:-translate-y-1 hover:shadow-md">
-                  <p className="text-xs tracking-[0.22em] uppercase text-[#7A5C3E]/60 mb-3">
-                    Show the brand
-                  </p>
-
-                  <p className="text-sm text-[#1F241C]/70 leading-relaxed">
-                    Make the business look polished and credible.
-                  </p>
-                </div>
-
-                <div className="rounded-[1.5rem] bg-[#F7F4ED] border border-[#E2D2B8]/50 p-5 transition duration-300 hover:-translate-y-1 hover:shadow-md">
-                  <p className="text-xs tracking-[0.22em] uppercase text-[#7A5C3E]/60 mb-3">
-                    Explain the offer
-                  </p>
-
-                  <p className="text-sm text-[#1F241C]/70 leading-relaxed">
-                    Make services clear without overloading the visitor.
-                  </p>
-                </div>
-
-                <div className="rounded-[1.5rem] bg-[#F7F4ED] border border-[#E2D2B8]/50 p-5 transition duration-300 hover:-translate-y-1 hover:shadow-md">
-                  <p className="text-xs tracking-[0.22em] uppercase text-[#7A5C3E]/60 mb-3">
-                    Guide action
-                  </p>
-
-                  <p className="text-sm text-[#1F241C]/70 leading-relaxed">
-                    Make it easy to call, book, or request a quote.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {/* RIGHT BRAND MOCKUP */}
-            <div className="rounded-[2.5rem] bg-[#EDE6D8] border border-[#E2D2B8]/60 p-5 md:p-6 shadow-[0_20px_60px_rgba(47,61,44,0.08)] animate-fade-up-delay-2 transition duration-500 hover:shadow-2xl">
-              <div className="rounded-[2rem] bg-[#FFFDF8] border border-[#E2D2B8]/50 p-5 md:p-6 h-full premium-shimmer">
-                <div className="flex items-center justify-between border-b border-[#E2D2B8]/50 pb-4 mb-6">
-                  <div className="flex items-center gap-2">
-                    <span className="w-3 h-3 rounded-full bg-[#D8C5A4]" />
-                    <span className="w-3 h-3 rounded-full bg-[#B9A98C]" />
-                    <span className="w-3 h-3 rounded-full bg-[#8D9A82]" />
-                  </div>
-
-                  <p className="text-xs tracking-[0.2em] uppercase text-[#7A5C3E]/55">
-                    Brand Preview
-                  </p>
-                </div>
-
-                <div className="rounded-[1.75rem] bg-[#F7F4ED] border border-[#E2D2B8]/50 overflow-hidden">
-                  <div className="flex items-center justify-between px-5 py-4 border-b border-[#E2D2B8]/50 bg-[#FBF8F2]">
-                    <div className="text-sm font-semibold text-[#1F241C]">
-                      Your Brand Here
-                    </div>
-
-                    <div className="hidden sm:flex gap-4 text-xs text-[#1F241C]/55">
-                      <span>Services</span>
-                      <span>Story</span>
-                      <span>Contact</span>
-                    </div>
-                  </div>
-
-                  <div className="p-5">
-                    <div className="rounded-[1.5rem] bg-[#7D8D71] h-52 mb-5 relative overflow-hidden">
-                      <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(255,255,255,0.12),rgba(255,255,255,0))]" />
-
-                      <div className="absolute left-5 top-5 max-w-[220px]">
-                        <div className="h-3 w-24 rounded-full bg-white/45 mb-4" />
-                        <div className="h-5 w-40 rounded-full bg-white/80 mb-3" />
-                        <div className="h-5 w-32 rounded-full bg-white/65 mb-6" />
-                        <div className="h-9 w-28 rounded-full bg-[#F7F4ED]" />
-                      </div>
-                    </div>
-
-                    <div className="grid grid-cols-3 gap-3 mb-5">
-                      <div className="rounded-2xl bg-[#FFFDF8] border border-[#E2D2B8]/50 p-4 transition duration-300 hover:-translate-y-1">
-                        <div className="h-3 w-14 rounded-full bg-[#E2D2B8] mb-3" />
-                        <div className="h-8 w-10 rounded-full bg-[#F0E7D6]" />
-                      </div>
-
-                      <div className="rounded-2xl bg-[#FFFDF8] border border-[#E2D2B8]/50 p-4 transition duration-300 hover:-translate-y-1">
-                        <div className="h-3 w-16 rounded-full bg-[#E2D2B8] mb-3" />
-                        <div className="h-8 w-12 rounded-full bg-[#F0E7D6]" />
-                      </div>
-
-                      <div className="rounded-2xl bg-[#FFFDF8] border border-[#E2D2B8]/50 p-4 transition duration-300 hover:-translate-y-1">
-                        <div className="h-3 w-12 rounded-full bg-[#E2D2B8] mb-3" />
-                        <div className="h-8 w-9 rounded-full bg-[#F0E7D6]" />
-                      </div>
-                    </div>
-
-                    <div className="grid grid-cols-5 gap-3">
-                      <div className="col-span-3 rounded-2xl bg-[#FFFDF8] border border-[#E2D2B8]/50 p-4">
-                        <div className="h-4 w-28 rounded-full bg-[#DCCBB0] mb-4" />
-
-                        <div className="space-y-3">
-                          <div className="h-3 rounded-full bg-[#EFE5D3] w-full" />
-                          <div className="h-3 rounded-full bg-[#EFE5D3] w-5/6" />
-                          <div className="h-3 rounded-full bg-[#EFE5D3] w-4/6" />
-                        </div>
-                      </div>
-
-                      <div className="col-span-2 rounded-2xl bg-[#2F3D2C] p-4 flex flex-col justify-between transition duration-300 hover:scale-[1.02]">
-                        <div>
-                          <div className="h-3 w-16 rounded-full bg-white/30 mb-3" />
-                          <div className="h-7 w-20 rounded-full bg-white/85 mb-2" />
-                          <div className="h-3 w-full rounded-full bg-white/25" />
-                        </div>
-
-                        <div className="h-10 rounded-full bg-[#F7F4ED] mt-6" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="mt-6 rounded-[1.5rem] bg-[#2F3D2C] p-6 text-white">
-                  <p className="text-xs tracking-[0.22em] uppercase text-white/45 mb-3">
-                    Built around
-                  </p>
-
-                  <div className="grid grid-cols-2 gap-3 text-sm text-white/75">
-                    <div className="rounded-2xl bg-white/10 px-4 py-3 transition duration-300 hover:bg-white/15">
-                      First impression
-                    </div>
-
-                    <div className="rounded-2xl bg-white/10 px-4 py-3 transition duration-300 hover:bg-white/15">
-                      Clear services
-                    </div>
-
-                    <div className="rounded-2xl bg-white/10 px-4 py-3 transition duration-300 hover:bg-white/15">
-                      Mobile experience
-                    </div>
-
-                    <div className="rounded-2xl bg-white/10 px-4 py-3 transition duration-300 hover:bg-white/15">
-                      Contact path
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="mt-10 flex justify-center animate-fade-up-delay-3">
-            <a
-              href="#contact"
-              className="inline-flex items-center justify-center rounded-full bg-[#2F3D2C] px-8 py-4 text-sm text-white transition duration-300 hover:-translate-y-0.5 hover:scale-[1.02] hover:bg-[#1F241C] hover:shadow-xl"
-            >
-              Build A Better Website
-            </a>
-          </div>
-        </div>
-      </section>
-
       {/* PROCESS */}
       <section id="process" className="py-24 px-6 bg-[#FFFDF8]">
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16">
@@ -596,80 +419,84 @@ export default function Home() {
         </div>
       </section>
 
-      {/* WHO WE HELP + WHAT'S INCLUDED */}
-      <section className="py-24 px-6 bg-[#F7F4ED]">
-        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-10">
-          <div className="rounded-[2.5rem] bg-[#FFFDF8] border border-[#E2D2B8]/50 p-8 md:p-10 animate-fade-up transition duration-500 hover:shadow-xl">
-            <p className="text-sm tracking-[0.3em] text-[#7A5C3E]/60 mb-4 uppercase">
+      {/* WHO WE HELP / WHAT'S INCLUDED */}
+      <section className="py-28 px-6 bg-[#F7F4ED]">
+        <div className="max-w-7xl mx-auto grid xl:grid-cols-2 gap-10 items-stretch">
+          <div className="rounded-[2.5rem] bg-[#FFFDF8] border border-[#E2D2B8]/40 shadow-[0_10px_30px_rgba(31,36,28,0.06)] p-10 md:p-12 h-full min-h-[620px] flex flex-col animate-fade-up transition duration-500 hover:shadow-xl">
+            <p className="text-sm tracking-[0.3em] text-[#7A5C3E]/60 mb-8 uppercase">
               Who We Help
             </p>
 
-            <h2 className="text-4xl md:text-5xl font-semibold leading-tight mb-6">
+            <div className="h-px w-full bg-[#E2D2B8]/60 mb-8" />
+
+            <h2 className="text-[42px] md:text-[52px] xl:text-[58px] leading-[0.95] tracking-tight font-semibold mb-8">
               Built for growing businesses.
             </h2>
 
-            <p className="text-[#1F241C]/65 leading-relaxed mb-8">
+            <p className="text-[#1F241C]/60 text-lg leading-9 max-w-2xl mb-10">
               Birch Studio is built for local service businesses, coaches,
               contractors, real estate teams, home service companies, and
               founders who need to look more credible online.
             </p>
 
-            <div className="grid sm:grid-cols-2 gap-3">
-              <div className="rounded-2xl bg-[#F7F4ED] border border-[#E2D2B8]/50 px-4 py-3 text-sm text-[#1F241C]/70">
+            <div className="grid sm:grid-cols-2 gap-4 mt-auto">
+              <div className="rounded-[1.25rem] border border-[#E2D2B8]/50 bg-[#F7F4ED] px-5 py-5 text-[#1F241C]/70 text-lg transition duration-300 hover:-translate-y-1 hover:shadow-md hover:bg-[#FFFDF8]">
                 Coaches and consultants
               </div>
 
-              <div className="rounded-2xl bg-[#F7F4ED] border border-[#E2D2B8]/50 px-4 py-3 text-sm text-[#1F241C]/70">
+              <div className="rounded-[1.25rem] border border-[#E2D2B8]/50 bg-[#F7F4ED] px-5 py-5 text-[#1F241C]/70 text-lg transition duration-300 hover:-translate-y-1 hover:shadow-md hover:bg-[#FFFDF8]">
                 Contractors and trades
               </div>
 
-              <div className="rounded-2xl bg-[#F7F4ED] border border-[#E2D2B8]/50 px-4 py-3 text-sm text-[#1F241C]/70">
+              <div className="rounded-[1.25rem] border border-[#E2D2B8]/50 bg-[#F7F4ED] px-5 py-5 text-[#1F241C]/70 text-lg transition duration-300 hover:-translate-y-1 hover:shadow-md hover:bg-[#FFFDF8]">
                 Local service businesses
               </div>
 
-              <div className="rounded-2xl bg-[#F7F4ED] border border-[#E2D2B8]/50 px-4 py-3 text-sm text-[#1F241C]/70">
+              <div className="rounded-[1.25rem] border border-[#E2D2B8]/50 bg-[#F7F4ED] px-5 py-5 text-[#1F241C]/70 text-lg transition duration-300 hover:-translate-y-1 hover:shadow-md hover:bg-[#FFFDF8]">
                 Founders and small brands
               </div>
             </div>
           </div>
 
-          <div className="rounded-[2.5rem] bg-[#2F3D2C] text-white p-8 md:p-10 animate-fade-up-delay-1 transition duration-500 hover:shadow-xl">
-            <p className="text-sm tracking-[0.3em] text-white/40 mb-4 uppercase">
+          <div className="rounded-[2.5rem] bg-gradient-to-r from-[#31442C] to-[#243422] text-white p-10 md:p-12 h-full min-h-[620px] flex flex-col animate-fade-up-delay-1 transition duration-500 hover:shadow-xl">
+            <p className="text-sm tracking-[0.3em] text-white/55 mb-8 uppercase">
               What’s Included
             </p>
 
-            <h2 className="text-4xl md:text-5xl font-semibold leading-tight mb-6">
+            <div className="h-px w-full bg-white/15 mb-8" />
+
+            <h2 className="text-[42px] md:text-[52px] xl:text-[58px] leading-[0.95] tracking-tight font-semibold mb-8 text-white">
               Everything needed to launch.
             </h2>
 
-            <p className="text-white/65 leading-relaxed mb-8">
+            <p className="text-white/75 text-lg leading-9 max-w-2xl mb-10">
               Every build is designed to give your business a stronger first
               impression, a clearer offer, and a working path for customer
               inquiries.
             </p>
 
-            <div className="grid sm:grid-cols-2 gap-3">
-              <div className="rounded-2xl bg-white/10 px-4 py-3 text-sm text-white/75">
+            <div className="grid sm:grid-cols-2 gap-4 mt-auto">
+              <div className="rounded-[1.25rem] bg-white/10 border border-white/5 px-5 py-5 text-white/90 text-lg transition duration-300 hover:-translate-y-1 hover:bg-white/15">
                 Custom homepage
               </div>
 
-              <div className="rounded-2xl bg-white/10 px-4 py-3 text-sm text-white/75">
+              <div className="rounded-[1.25rem] bg-white/10 border border-white/5 px-5 py-5 text-white/90 text-lg transition duration-300 hover:-translate-y-1 hover:bg-white/15">
                 Mobile responsive design
               </div>
 
-              <div className="rounded-2xl bg-white/10 px-4 py-3 text-sm text-white/75">
+              <div className="rounded-[1.25rem] bg-white/10 border border-white/5 px-5 py-5 text-white/90 text-lg transition duration-300 hover:-translate-y-1 hover:bg-white/15">
                 Contact form to inbox
               </div>
 
-              <div className="rounded-2xl bg-white/10 px-4 py-3 text-sm text-white/75">
+              <div className="rounded-[1.25rem] bg-white/10 border border-white/5 px-5 py-5 text-white/90 text-lg transition duration-300 hover:-translate-y-1 hover:bg-white/15">
                 Basic SEO setup
               </div>
 
-              <div className="rounded-2xl bg-white/10 px-4 py-3 text-sm text-white/75">
+              <div className="rounded-[1.25rem] bg-white/10 border border-white/5 px-5 py-5 text-white/90 text-lg transition duration-300 hover:-translate-y-1 hover:bg-white/15">
                 Launch support
               </div>
 
-              <div className="rounded-2xl bg-white/10 px-4 py-3 text-sm text-white/75">
+              <div className="rounded-[1.25rem] bg-white/10 border border-white/5 px-5 py-5 text-white/90 text-lg transition duration-300 hover:-translate-y-1 hover:bg-white/15">
                 Post-launch edits available
               </div>
             </div>
@@ -678,115 +505,127 @@ export default function Home() {
       </section>
 
       {/* PRICING */}
-      <section id="pricing" className="py-24 px-6">
-        <div className="max-w-7xl mx-auto mb-16 animate-fade-up">
+      <section id="pricing" className="py-28 px-6 bg-[#FFFDF8]">
+        <div className="max-w-7xl mx-auto mb-20 animate-fade-up">
           <p className="text-sm tracking-[0.3em] text-[#7A5C3E]/60 mb-4 uppercase">
             Pricing
           </p>
 
-          <h2 className="text-4xl md:text-5xl font-semibold">
+          <h2 className="text-4xl md:text-5xl font-semibold tracking-tight">
             Simple packages.
           </h2>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-6 max-w-7xl mx-auto">
-          <div className="rounded-[2rem] bg-[#F7F4ED] border border-[#E2D2B8]/40 p-8 transition duration-300 hover:-translate-y-2 hover:shadow-xl animate-fade-up">
-            <p className="text-xs tracking-[0.25em] uppercase text-[#7A5C3E]/60 mb-4">
+        <div className="grid md:grid-cols-3 gap-6 max-w-7xl mx-auto items-stretch">
+          <div className="rounded-[2rem] bg-[#F7F4ED] border border-[#E2D2B8]/40 p-8 h-full flex flex-col transition duration-300 hover:-translate-y-2 hover:shadow-xl animate-fade-up">
+            <p className="text-sm tracking-[0.25em] text-[#7A5C3E]/60 mb-8 uppercase">
               Best for simple launches
             </p>
 
-            <h3 className="text-xl font-semibold mb-4">
+            <h3 className="text-2xl font-semibold mb-4">
               Starter
             </h3>
 
-            <p className="text-4xl font-semibold mb-4">
+            <p className="text-5xl font-semibold mb-6">
               $500
             </p>
 
-            <p className="text-[#1F241C]/60 mb-6 leading-relaxed">
+            <div className="h-px w-full bg-[#E2D2B8]/60 mb-6" />
+
+            <p className="text-[#1F241C]/60 mb-8 leading-8">
               A clean one-page site for a simple business presence.
             </p>
 
-            <ul className="space-y-2 text-sm text-[#1F241C]/60 mb-8">
+            <ul className="space-y-3 text-[#1F241C]/60 mb-10">
               <li>• One-page website</li>
               <li>• Mobile responsive</li>
               <li>• Basic contact section</li>
             </ul>
 
-            <a
-              href="#contact"
-              className="border border-[#7A5C3E]/40 text-[#7A5C3E] px-6 py-3 rounded-full w-full block text-center transition duration-300 hover:-translate-y-0.5 hover:bg-[#E2D2B8]/30"
-            >
-              Start
-            </a>
+            <div className="mt-auto">
+              <a
+                href="#contact"
+                className="w-full block border border-[#CDB99A] text-[#7A5C3E] px-6 py-4 rounded-full text-lg text-center transition hover:bg-[#EDE4D5]"
+              >
+                Start Project
+              </a>
+            </div>
           </div>
 
-          <div className="rounded-[2rem] bg-[#2F3D2C] text-white p-8 transition duration-300 hover:-translate-y-2 hover:shadow-xl animate-fade-up-delay-1">
-            <p className="text-xs tracking-[0.3em] text-white/50 mb-4">
-              MOST POPULAR
+          <div className="rounded-[2rem] bg-gradient-to-r from-[#31442C] to-[#243422] text-white p-8 h-full flex flex-col transition duration-300 hover:-translate-y-2 hover:shadow-xl animate-fade-up-delay-1">
+            <p className="text-sm tracking-[0.25em] text-white/60 mb-6 uppercase">
+              Most popular
             </p>
 
-            <p className="text-xs tracking-[0.25em] uppercase text-white/45 mb-4">
+            <p className="text-sm tracking-[0.25em] text-white/60 mb-8 uppercase">
               Best for service businesses
             </p>
 
-            <h3 className="text-xl font-semibold mb-4">
+            <h3 className="text-2xl font-semibold mb-4">
               Business
             </h3>
 
-            <p className="text-4xl font-semibold mb-4">
+            <p className="text-5xl font-semibold mb-6">
               $1,500
             </p>
 
-            <p className="text-white/65 mb-6 leading-relaxed">
+            <div className="h-px w-full bg-white/15 mb-6" />
+
+            <p className="text-white/75 mb-8 leading-8">
               A custom website built to show the brand and capture leads.
             </p>
 
-            <ul className="space-y-2 text-sm text-white/70 mb-8">
+            <ul className="space-y-3 text-white/85 mb-10">
               <li>• Multi-section site</li>
               <li>• Custom design direction</li>
               <li>• SEO-ready structure</li>
               <li>• Launch support</li>
             </ul>
 
-            <a
-              href="#contact"
-              className="bg-[#F7F4ED] text-[#2F3D2C] px-6 py-3 rounded-full w-full block text-center transition duration-300 hover:-translate-y-0.5 hover:bg-white"
-            >
-              Start
-            </a>
+            <div className="mt-auto">
+              <a
+                href="#contact"
+                className="w-full block bg-[#F7F4ED] text-[#2F3D2C] px-6 py-4 rounded-full text-lg text-center transition hover:bg-white"
+              >
+                Start Project
+              </a>
+            </div>
           </div>
 
-          <div className="rounded-[2rem] bg-[#F7F4ED] border border-[#E2D2B8]/40 p-8 transition duration-300 hover:-translate-y-2 hover:shadow-xl animate-fade-up-delay-2">
-            <p className="text-xs tracking-[0.25em] uppercase text-[#7A5C3E]/60 mb-4">
+          <div className="rounded-[2rem] bg-[#F7F4ED] border border-[#E2D2B8]/40 p-8 h-full flex flex-col transition duration-300 hover:-translate-y-2 hover:shadow-xl animate-fade-up-delay-2">
+            <p className="text-sm tracking-[0.25em] text-[#7A5C3E]/60 mb-8 uppercase">
               Best for custom brands
             </p>
 
-            <h3 className="text-xl font-semibold mb-4">
+            <h3 className="text-2xl font-semibold mb-4">
               Premium
             </h3>
 
-            <p className="text-4xl font-semibold mb-4">
+            <p className="text-5xl font-semibold mb-6">
               $3,000+
             </p>
 
-            <p className="text-[#1F241C]/60 mb-6 leading-relaxed">
+            <div className="h-px w-full bg-[#E2D2B8]/60 mb-6" />
+
+            <p className="text-[#1F241C]/60 mb-8 leading-8">
               A deeper build with stronger content and custom direction.
             </p>
 
-            <ul className="space-y-2 text-sm text-[#1F241C]/60 mb-8">
+            <ul className="space-y-3 text-[#1F241C]/60 mb-10">
               <li>• Custom features</li>
               <li>• Branding refinement</li>
               <li>• Priority delivery</li>
               <li>• Ongoing support</li>
             </ul>
 
-            <a
-              href="#contact"
-              className="border border-[#7A5C3E]/40 text-[#7A5C3E] px-6 py-3 rounded-full w-full block text-center transition duration-300 hover:-translate-y-0.5 hover:bg-[#E2D2B8]/30"
-            >
-              Start
-            </a>
+            <div className="mt-auto">
+              <a
+                href="#contact"
+                className="w-full block border border-[#CDB99A] text-[#7A5C3E] px-6 py-4 rounded-full text-lg text-center transition hover:bg-[#EDE4D5]"
+              >
+                Start Project
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -899,10 +738,10 @@ export default function Home() {
             </a>
 
             <a
-              href="#brand"
+              href="#pricing"
               className="text-white/40 hover:text-white text-sm transition"
             >
-              Brand
+              Pricing
             </a>
 
             <a
